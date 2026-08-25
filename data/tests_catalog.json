@@ -1,0 +1,2291 @@
+{
+  "metadata": {
+    "title": "TEST DE EXPLORACIÓN FÍSICA EN DOLOR",
+    "subtitle": "Atlas de Evaluación Ortopédica y Maniobras Clínicas de Alta Precisión",
+    "author": "Dr. Curro Mir - Especialista en Medicina del Dolor",
+    "version": "3.3.0",
+    "video_sources": [
+      {
+        "name": "Physiotutors",
+        "handle": "@Physiotutors",
+        "url": "https://www.youtube.com/@Physiotutors",
+        "badge": "Physiotutors"
+      },
+      {
+        "name": "Educom Continuing Education™",
+        "handle": "@EducomContinuingEducation",
+        "url": "https://www.youtube.com/@EducomContinuingEducation",
+        "badge": "Educom"
+      }
+    ],
+    "regions": [
+      {
+        "id": "hombro",
+        "name": "Hombro y Cintura Escapular",
+        "icon": "🦴",
+        "desc": "Manguito rotador, pinzamiento subacromial, labrum (SLAP), inestabilidad glenohumeral y bíceps"
+      },
+      {
+        "id": "codo",
+        "name": "Codo y Antebrazo",
+        "icon": "🦾",
+        "desc": "Epicondilalgia lateral/medial, ligamentos colaterales y neuropatía cubital"
+      },
+      {
+        "id": "muneca_mano",
+        "name": "Muñeca y Mano",
+        "icon": "🤲",
+        "desc": "Túnel carpiano, Tenosinovitis de De Quervain, estabilidad carpiana e inervación sensitivo-motora"
+      },
+      {
+        "id": "cervical",
+        "name": "Columna Cervical",
+        "icon": "🧠",
+        "desc": "Radiculopatía foraminal, mielopatía espondilótica, neurodinámica de miembro superior y desfiladero torácico"
+      },
+      {
+        "id": "lumbar",
+        "name": "Columna Lumbar y Torácica",
+        "icon": "⚡",
+        "desc": "Compresión radicular ciática/femoral, tensión neuromeníngea, síndrome facetario y claudicación"
+      },
+      {
+        "id": "sacroiliaca",
+        "name": "Pelvis y Art. Sacroilíaca",
+        "icon": "🎯",
+        "desc": "Clúster de Laslett (Gold Standard), síndrome del piriforme, inestabilidad pélvica postparto y ASLR"
+      },
+      {
+        "id": "cadera",
+        "name": "Cadera y Coxofemoral",
+        "icon": "🦿",
+        "desc": "Pinzamiento femoroacetabular (FAI), desgarros labrales, cadera vs sacroilíaca y abductores"
+      },
+      {
+        "id": "rodilla",
+        "name": "Rodilla",
+        "icon": "🦵",
+        "desc": "Ligamento cruzado anterior y posterior, desgarros meniscales, articulación patelofemoral y banda iliotibial"
+      },
+      {
+        "id": "tobillo_pie",
+        "name": "Tobillo y Pie",
+        "icon": "🦶",
+        "desc": "Ruptura del tendón de Aquiles, fasciopatía plantar, inestabilidad ligamentaria y síndrome del túnel tarsiano"
+      }
+    ]
+  },
+  "tests": [
+    {
+      "id": "hombro-neer",
+      "name": "Test de Neer",
+      "eponym": "Neer Impingement Sign",
+      "region": "hombro",
+      "region_label": "Hombro y Cintura Escapular",
+      "category": "pinzamiento",
+      "category_label": "Pinzamiento Subacromial",
+      "target_structure": "Tendón del supraespinoso, porción larga del bíceps y bursa subacromial",
+      "objective": "Provocar el pinzamiento subacromial comprimiendo la tuberosidad mayor del húmero contra el acromion anteroinferior.",
+      "patient_position": "Paciente sentado erguido o de pie con los brazos relajados.",
+      "examiner_position": "Examinador junto al paciente, estabilizando la escápula con una mano.",
+      "procedure": [
+        "1. Fijar con una mano el acromion y la espina escapular para bloquear la rotación escapular hacia arriba.",
+        "2. Colocar el brazo en rotación interna máxima (pulgar apuntando hacia abajo).",
+        "3. Elevar pasivamente el brazo en el plano escapular (flexión anterior forzada) hacia los 180°."
+      ],
+      "positive_sign": "Dolor agudo en el espacio subacromial o cara anterolateral del hombro entre 70° y 120°.",
+      "clinical_interpretation": "Pinzamiento subacromial o bursitis. La desaparición del dolor tras infiltrar lidocaína en el espacio subacromial confirma el Test de Neer (Neer Sign).",
+      "sensitivity": "79%",
+      "specificity": "63%",
+      "sens_val": 79,
+      "spec_val": 63,
+      "lr_plus": "+2.1",
+      "lr_minus": "-0.33",
+      "exam_pearl": "Test de referencia para cribado de pinzamiento por su alta sensibilidad. Combínalo con Hawkins-Kennedy para confirmación.",
+      "clinical_tip": "La fijación de la escápula es imprescindible: si la escápula bascula, el troquíter no chocará con el acromion y dará un falso negativo.",
+      "common_errors": "No fijar la escápula; elevar en abducción lateral pura en lugar de plano escapular.",
+      "differential_dx": [
+        "Bursitis subacromial",
+        "Tendinopatía calcificante",
+        "Artrosis acromioclavicular",
+        "Radiculopatía C5"
+      ],
+      "cluster": "Batería de Pinzamiento Subacromial (Neer + Hawkins + Arco Doloroso + Jobe)",
+      "videos": [
+        {
+          "channel": "Educom Continuing Education™",
+          "channel_id": "educom",
+          "title": "Neer Impingement Test | Shoulder Examination",
+          "video_id": "8p-Y0k49VYc",
+          "youtube_url": "https://youtu.be/8p-Y0k49VYc",
+          "embed_url": "https://www.youtube-nocookie.com/embed/8p-Y0k49VYc"
+        },
+        {
+          "channel": "Physiotutors",
+          "channel_id": "physiotutors",
+          "title": "Neer Test | Subacromial Pain Syndrome",
+          "video_id": "k24UfZvj7d8",
+          "youtube_url": "https://www.youtube.com/watch?v=k24UfZvj7d8",
+          "embed_url": "https://www.youtube-nocookie.com/embed/k24UfZvj7d8"
+        }
+      ]
+    },
+    {
+      "id": "hombro-hawkins",
+      "name": "Test de Hawkins-Kennedy",
+      "eponym": "Hawkins-Kennedy Impingement Test",
+      "region": "hombro",
+      "region_label": "Hombro y Cintura Escapular",
+      "category": "pinzamiento",
+      "category_label": "Pinzamiento Subacromial",
+      "target_structure": "Tendón del supraespinoso contra el ligamento coracoacromial y apófisis coracoides",
+      "objective": "Forzar el atrapamiento del supraespinoso bajo el arco coracoacromial mediante rotación interna rápida en 90° de flexión.",
+      "patient_position": "Paciente sentado erguido.",
+      "examiner_position": "Examinador frente al paciente sujetando el codo y el antebrazo.",
+      "procedure": [
+        "1. Flexionar el hombro a 90° en el plano sagital anterior.",
+        "2. Flexionar el codo a 90° con el antebrazo horizontal.",
+        "3. Manteniendo el codo como fulcro, rotar internamente el hombro empujando el antebrazo hacia abajo."
+      ],
+      "positive_sign": "Dolor agudo en cara anterior o subacromial del hombro durante la rotación interna.",
+      "clinical_interpretation": "Pinzamiento subacromial o subcoracoideo. Es la prueba individual más sensible para dolor subacromial.",
+      "sensitivity": "84%",
+      "specificity": "58%",
+      "sens_val": 84,
+      "spec_val": 58,
+      "lr_plus": "+2.0",
+      "lr_minus": "-0.28",
+      "exam_pearl": "Más sensible que Neer para pinzamiento anterointerno. Ideal como primera prueba de despistaje rápido.",
+      "clinical_tip": "Mantén los 90° de flexión anterior pura; si abduces el brazo hacia afuera se pierde el contacto con el ligamento coracoacromial.",
+      "common_errors": "Dejar caer el codo por debajo de 90°; realizar rotación externa en vez de interna.",
+      "differential_dx": [
+        "Tendinopatía del supraespinoso",
+        "Pinzamiento subcoracoideo",
+        "Lesión SLAP"
+      ],
+      "cluster": "Batería de Pinzamiento Subacromial",
+      "videos": [
+        {
+          "channel": "Physiotutors",
+          "channel_id": "physiotutors",
+          "title": "Hawkins-Kennedy Test | Subacromial Impingement",
+          "video_id": "6GkbCna_u80",
+          "youtube_url": "https://www.youtube.com/watch?v=6GkbCna_u80",
+          "embed_url": "https://www.youtube-nocookie.com/embed/6GkbCna_u80"
+        },
+        {
+          "channel": "Educom Continuing Education™",
+          "channel_id": "educom",
+          "title": "Hawkins Kennedy Impingement Test | Shoulder Physical Exam",
+          "video_id": "8p-Y0k49VYc",
+          "youtube_url": "https://youtu.be/8p-Y0k49VYc",
+          "embed_url": "https://www.youtube-nocookie.com/embed/8p-Y0k49VYc"
+        }
+      ]
+    },
+    {
+      "id": "hombro-jobe",
+      "name": "Test de Jobe (Empty Can)",
+      "eponym": "Prueba de la Lata Vacía / Supraspinatus Test",
+      "region": "hombro",
+      "region_label": "Hombro y Cintura Escapular",
+      "category": "manguito",
+      "category_label": "Manguito Rotador",
+      "target_structure": "Músculo y tendón supraespinoso (carilla superior del troquíter)",
+      "objective": "Aislar y evaluar la fuerza e integridad del tendón supraespinoso.",
+      "patient_position": "Paciente de pie o sentado erguido.",
+      "examiner_position": "Examinador de pie frente al paciente.",
+      "procedure": [
+        "1. Abducir ambos brazos a 90° en el plano escapular (30° anterior al plano frontal).",
+        "2. Rotar internamente al máximo (pulgares apuntando hacia abajo).",
+        "3. El examinador aplica resistencia descendente progresiva mientras el paciente resiste hacia arriba."
+      ],
+      "positive_sign": "Dolor y/o debilidad franca (incapacidad de mantener el brazo contra la resistencia comparado con el contralateral).",
+      "clinical_interpretation": "Dolor con fuerza conservada sugiere tendinosis/bursitis; debilidad o caída del brazo indica rotura parcial o total del supraespinoso.",
+      "sensitivity": "79%",
+      "specificity": "68%",
+      "sens_val": 79,
+      "spec_val": 68,
+      "lr_plus": "+2.5",
+      "lr_minus": "-0.31",
+      "exam_pearl": "Compara 'Empty Can' (pulgar abajo) con 'Full Can' (pulgar arriba). Si Empty Can duele pero Full Can no → bursitis. Si ambos producen debilidad → rotura del supraespinoso.",
+      "clinical_tip": "Mantén los 30° anteriores en el plano escapular para evitar que el deltoides medio compense la debilidad del supraespinoso.",
+      "common_errors": "Hacer la fuerza en plano coronal puro (0°) o sagital puro (90°).",
+      "differential_dx": [
+        "Rotura del supraespinoso",
+        "Bursitis subdeltoidea",
+        "Neuropatía supraescapular"
+      ],
+      "cluster": "Tríada de Manguito Rotador (Jobe + Drop Arm + Patte)",
+      "videos": [
+        {
+          "channel": "Educom Continuing Education™",
+          "channel_id": "educom",
+          "title": "Empty Can Test (Jobe Test) | Supraspinatus",
+          "video_id": "8p-Y0k49VYc",
+          "youtube_url": "https://youtu.be/8p-Y0k49VYc",
+          "embed_url": "https://www.youtube-nocookie.com/embed/8p-Y0k49VYc"
+        },
+        {
+          "channel": "Physiotutors",
+          "channel_id": "physiotutors",
+          "title": "Jobe's Test / Empty Can Test | Supraspinatus Tear",
+          "video_id": "p67T5xJ7JbM",
+          "youtube_url": "https://www.youtube.com/watch?v=p67T5xJ7JbM",
+          "embed_url": "https://www.youtube-nocookie.com/embed/p67T5xJ7JbM"
+        }
+      ]
+    },
+    {
+      "id": "hombro-lift-off",
+      "name": "Test de Lift-Off (Gerber)",
+      "eponym": "Gerber Lift-Off Test",
+      "region": "hombro",
+      "region_label": "Hombro y Cintura Escapular",
+      "category": "manguito",
+      "category_label": "Manguito Rotador",
+      "target_structure": "Músculo y tendón subescapular (rotador interno principal)",
+      "objective": "Evaluar la integridad funcional y fuerza del subescapular.",
+      "patient_position": "Paciente de pie o sentado.",
+      "examiner_position": "Examinador detrás del paciente.",
+      "procedure": [
+        "1. Colocar el dorso de la mano del paciente en la región lumbar media, con el codo a 90°.",
+        "2. Pedir al paciente que separe activamente la mano de la espalda hacia atrás, manteniendo la rotación interna del hombro.",
+        "3. Si lo logra, aplicar resistencia empujando la mano hacia la espalda."
+      ],
+      "positive_sign": "Incapacidad para separar la mano de la espalda o mantener la separación contra resistencia.",
+      "clinical_interpretation": "Rotura del tendón subescapular o parálisis del nervio subescapular.",
+      "sensitivity": "71%",
+      "specificity": "98%",
+      "sens_val": 71,
+      "spec_val": 98,
+      "lr_plus": "+35.5",
+      "lr_minus": "-0.30",
+      "exam_pearl": "Especificidad del 98-100%: Si el Lift-Off es positivo, confirma prácticamente la rotura del subescapular. Si no puede colocar la mano atrás por dolor, usa el Belly Press.",
+      "clinical_tip": "Comprueba que no compense extendiendo el codo con el tríceps.",
+      "common_errors": "Confundir extensión de codo con rotación interna pura del hombro.",
+      "differential_dx": [
+        "Rotura del subescapular",
+        "Subluxación de la PLB",
+        "Capsulitis adhesiva"
+      ],
+      "cluster": "Batería de Subescapular (Lift-Off + Belly Press + Bear Hug)",
+      "videos": [
+        {
+          "channel": "Physiotutors",
+          "channel_id": "physiotutors",
+          "title": "Gerber's Lift Off Test | Subscapularis Tear",
+          "video_id": "7b0XU8XgJvY",
+          "youtube_url": "https://www.youtube.com/watch?v=7b0XU8XgJvY",
+          "embed_url": "https://www.youtube-nocookie.com/embed/7b0XU8XgJvY"
+        },
+        {
+          "channel": "Educom Continuing Education™",
+          "channel_id": "educom",
+          "title": "Gerber Lift Off Test for Subscapularis",
+          "video_id": "8p-Y0k49VYc",
+          "youtube_url": "https://youtu.be/8p-Y0k49VYc",
+          "embed_url": "https://www.youtube-nocookie.com/embed/8p-Y0k49VYc"
+        }
+      ]
+    },
+    {
+      "id": "hombro-drop-arm",
+      "name": "Drop Arm Test (Signo del Brazo Caído)",
+      "eponym": "Signo de Codman / Drop Arm Sign",
+      "region": "hombro",
+      "region_label": "Hombro y Cintura Escapular",
+      "category": "manguito",
+      "category_label": "Manguito Rotador",
+      "target_structure": "Tendones supraespinoso e infraespinoso (roturas masivas)",
+      "objective": "Detectar roturas masivas y completas del manguito rotador superior.",
+      "patient_position": "Paciente de pie o sentado.",
+      "examiner_position": "Examinador detrás o al lado del paciente.",
+      "procedure": [
+        "1. Elevar pasivamente el brazo del paciente a 90° o 120° de abducción.",
+        "2. Pedir al paciente que mantenga la posición y baje el brazo lentamente de forma controlada."
+      ],
+      "positive_sign": "El brazo cae bruscamente sin control a partir de 90° por debilidad extrema o dolor intenso.",
+      "clinical_interpretation": "Rotura transmural masiva del manguito rotador superior.",
+      "sensitivity": "42%",
+      "specificity": "98%",
+      "sens_val": 42,
+      "spec_val": 98,
+      "lr_plus": "+21.0",
+      "lr_minus": "-0.59",
+      "exam_pearl": "Baja sensibilidad pero especificidad casi absoluta: un Drop Arm positivo indica rotura masiva y valoración quirúrgica urgente.",
+      "clinical_tip": "Ten tu mano lista debajo del brazo para evitar que caiga golpeando el cuerpo.",
+      "common_errors": "Soltar el brazo bruscamente sin avisar al paciente.",
+      "differential_dx": [
+        "Rotura masiva del manguito",
+        "Lesión del nervio axilar"
+      ],
+      "cluster": "Batería de Roturas Masivas de Manguito",
+      "videos": [
+        {
+          "channel": "Educom Continuing Education™",
+          "channel_id": "educom",
+          "title": "Drop Arm Test | Rotator Cuff Tear",
+          "video_id": "8p-Y0k49VYc",
+          "youtube_url": "https://youtu.be/8p-Y0k49VYc",
+          "embed_url": "https://www.youtube-nocookie.com/embed/8p-Y0k49VYc"
+        },
+        {
+          "channel": "Physiotutors",
+          "channel_id": "physiotutors",
+          "title": "Drop Arm Sign | Massive Rotator Cuff Tear",
+          "video_id": "eF_o34w0Zrk",
+          "youtube_url": "https://www.youtube.com/watch?v=eF_o34w0Zrk",
+          "embed_url": "https://www.youtube-nocookie.com/embed/eF_o34w0Zrk"
+        }
+      ]
+    },
+    {
+      "id": "hombro-obrien",
+      "name": "Test de O'Brien (Active Compression)",
+      "eponym": "O'Brien Active Compression Test",
+      "region": "hombro",
+      "region_label": "Hombro y Cintura Escapular",
+      "category": "labrum",
+      "category_label": "Labrum y SLAP",
+      "target_structure": "Labrum superior (SLAP) y articulación acromioclavicular (AC)",
+      "objective": "Diferenciar patología del labrum superior (SLAP) de patología de la articulación acromioclavicular.",
+      "patient_position": "Paciente de pie con el brazo en 90° de flexión y 10-15° de aducción horizontal.",
+      "examiner_position": "Examinador junto al paciente aplicando fuerza descendente.",
+      "procedure": [
+        "1. Posición 1: Brazo a 90° flexión, 10° aducción, rotación interna máxima (pulgar abajo). El examinador empuja hacia abajo contra resistencia.",
+        "2. Posición 2: Misma posición con rotación externa máxima (palma arriba/supinación). Se repite la fuerza descendente."
+      ],
+      "positive_sign": "SLAP: Dolor profundo en posición 1 que disminuye o desaparece en posición 2. AC: Dolor superficial en la articulación AC en ambas posiciones.",
+      "clinical_interpretation": "Lesión SLAP tipo II vs patología articular acromioclavicular según la respuesta a la supinación.",
+      "sensitivity": "75%",
+      "specificity": "85%",
+      "sens_val": 75,
+      "spec_val": 85,
+      "lr_plus": "+5.0",
+      "lr_minus": "-0.29",
+      "exam_pearl": "La clave es la supinación: si el dolor se alivia con la palma hacia arriba, la lesión está en el labrum superior (SLAP).",
+      "clinical_tip": "Pregunta al paciente: '¿El dolor es superficial arriba en el hueso o profundo dentro del hombro?'.",
+      "common_errors": "No aducir los 10-15° necesarios; no cambiar completamente la rotación entre fase 1 y 2.",
+      "differential_dx": [
+        "Lesión SLAP",
+        "Artrosis acromioclavicular",
+        "Tendinopatía de la PLB"
+      ],
+      "cluster": "Batería de Labrum y Bíceps",
+      "videos": [
+        {
+          "channel": "Educom Continuing Education™",
+          "channel_id": "educom",
+          "title": "O'Brien Test (Active Compression Test) | SLAP",
+          "video_id": "8p-Y0k49VYc",
+          "youtube_url": "https://youtu.be/8p-Y0k49VYc",
+          "embed_url": "https://www.youtube-nocookie.com/embed/8p-Y0k49VYc"
+        },
+        {
+          "channel": "Physiotutors",
+          "channel_id": "physiotutors",
+          "title": "O'Brien Test | SLAP Lesion Assessment",
+          "video_id": "uRk1j9aK9P8",
+          "youtube_url": "https://www.youtube.com/watch?v=uRk1j9aK9P8",
+          "embed_url": "https://www.youtube-nocookie.com/embed/uRk1j9aK9P8"
+        }
+      ]
+    },
+    {
+      "id": "codo-cozen",
+      "name": "Test de Cozen",
+      "eponym": "Prueba de Cozen / Codo de Tenista",
+      "region": "codo",
+      "region_label": "Codo y Antebrazo",
+      "category": "tendinopatia",
+      "category_label": "Epicondilalgia Lateral",
+      "target_structure": "Tendón del extensor radial corto del carpo (ECRB) en el epicóndilo lateral",
+      "objective": "Provocar dolor en el epicóndilo lateral mediante contracción isométrica resistida del ECRB.",
+      "patient_position": "Paciente sentado con el codo a 90° de flexión y antebrazo en pronación.",
+      "examiner_position": "Examinador frente al paciente fijando el codo con el pulgar en el epicóndilo lateral.",
+      "procedure": [
+        "1. Fijar el epicóndilo lateral con el pulgar.",
+        "2. El paciente cierra el puño y realiza extensión de muñeca con desviación radial.",
+        "3. El examinador resiste fuertemente la extensión y desviación radial."
+      ],
+      "positive_sign": "Dolor agudo punzante localizado sobre el epicóndilo lateral.",
+      "clinical_interpretation": "Epicondilalgia lateral crónica o aguda (tendinosis del ECRB).",
+      "sensitivity": "75%",
+      "specificity": "80%",
+      "sens_val": 75,
+      "spec_val": 80,
+      "lr_plus": "+3.75",
+      "lr_minus": "-0.31",
+      "exam_pearl": "Cozen = contracción activa. Mill = estiramiento pasivo. Maudsley = extensión del 3er dedo. La combinación de las 3 positivas eleva la especificidad a >95%.",
+      "clinical_tip": "La desviación radial al extender es la clave biomecánica para tensionar selectivamente el tendón del ECRB.",
+      "common_errors": "No aplicar resistencia con desviación radial.",
+      "differential_dx": [
+        "Síndrome del túnel radial",
+        "Inestabilidad rotatoria posterolateral",
+        "Artrosis radiocapitular"
+      ],
+      "cluster": "Tríada de Epicondilalgia Lateral (Cozen + Mill + Maudsley)",
+      "videos": [
+        {
+          "channel": "Physiotutors",
+          "channel_id": "physiotutors",
+          "title": "Cozen's Test | Tennis Elbow / Lateral Epicondylalgia",
+          "video_id": "d0n9PqR8wKw",
+          "youtube_url": "https://www.youtube.com/watch?v=d0n9PqR8wKw",
+          "embed_url": "https://www.youtube-nocookie.com/embed/d0n9PqR8wKw"
+        }
+      ]
+    },
+    {
+      "id": "codo-golfer",
+      "name": "Golfer's Elbow Test",
+      "eponym": "Prueba de Epicondilalgia Medial / Cozen Inverso",
+      "region": "codo",
+      "region_label": "Codo y Antebrazo",
+      "category": "tendinopatia",
+      "category_label": "Epicondilalgia Medial",
+      "target_structure": "Tendón común flexo-pronador en el epicóndilo medial (epitróclea)",
+      "objective": "Reproducir el dolor en la epitróclea mediante contracción resistida de flexores y pronadores.",
+      "patient_position": "Paciente sentado con el codo extendido y antebrazo en supinación.",
+      "examiner_position": "Examinador al lado del paciente palpando el epicóndilo medial.",
+      "procedure": [
+        "1. Palpar el epicóndilo medial.",
+        "2. El paciente intenta flexionar la muñeca y pronar el antebrazo contra la resistencia del examinador."
+      ],
+      "positive_sign": "Dolor agudo reproducido en el epicóndilo medial.",
+      "clinical_interpretation": "Epicondilalgia medial ('codo de golfista').",
+      "sensitivity": "75%",
+      "specificity": "83%",
+      "sens_val": 75,
+      "spec_val": 83,
+      "lr_plus": "+4.4",
+      "lr_minus": "-0.30",
+      "exam_pearl": "¡Regla clínica!: En epicondilalgia medial descarta siempre neuropatía cubital asociada (Tinel cubital). Hasta el 60% asocian irritación del nervio cubital.",
+      "clinical_tip": "Diferencia la tendinopatía de la inestabilidad del ligamento colateral medial con el Moving Valgus Stress Test.",
+      "common_errors": "No palpar el epicóndilo medial durante la contracción resistida.",
+      "differential_dx": [
+        "Neuropatía cubital",
+        "Insuficiencia del LCM",
+        "Avulsión epitroclear"
+      ],
+      "cluster": "Batería Medial de Codo (Golfer + Moving Valgus + Tinel)",
+      "videos": [
+        {
+          "channel": "Educom Continuing Education™",
+          "channel_id": "educom",
+          "title": "Golfer's Elbow Test (Reverse Cozen's) | Medial Epicondylalgia",
+          "video_id": "8p-Y0k49VYc",
+          "youtube_url": "https://youtu.be/8p-Y0k49VYc",
+          "embed_url": "https://www.youtube-nocookie.com/embed/8p-Y0k49VYc"
+        },
+        {
+          "channel": "Physiotutors",
+          "channel_id": "physiotutors",
+          "title": "Golfer's Elbow Test | Medial Epicondylalgia",
+          "video_id": "7qX8N3j8L8E",
+          "youtube_url": "https://www.youtube.com/watch?v=7qX8N3j8L8E",
+          "embed_url": "https://www.youtube-nocookie.com/embed/7qX8N3j8L8E"
+        }
+      ]
+    },
+    {
+      "id": "codo-moving-valgus",
+      "name": "Moving Valgus Stress Test",
+      "eponym": "Valgus Stress Dinámico de O'Driscoll",
+      "region": "codo",
+      "region_label": "Codo y Antebrazo",
+      "category": "ligamentos",
+      "category_label": "Ligamentos de Codo",
+      "target_structure": "Fascículo anterior del Ligamento Colateral Medial (LCM) del codo",
+      "objective": "Detectar insuficiencia ligamentaria o rotura del LCM en atletas lanzadores.",
+      "patient_position": "Paciente de pie o sentado con hombro a 90° de abducción y rotación externa máxima.",
+      "examiner_position": "Examinador detrás del paciente aplicando torsión en valgo.",
+      "procedure": [
+        "1. Hombro a 90° abducción y rotación externa máxima; codo a 120° de flexión.",
+        "2. Aplicar una fuerza en valgo constante mientras se extiende rápidamente el codo hasta los 30°."
+      ],
+      "positive_sign": "Dolor agudo tipo desgarro ('shear pain') en la cara medial del codo reproducido entre los 120° y 70° de flexión.",
+      "clinical_interpretation": "Lesión o rotura del ligamento colateral medial (LCM). Gold standard clínico para lanzadores.",
+      "sensitivity": "100%",
+      "specificity": "78%",
+      "sens_val": 100,
+      "spec_val": 78,
+      "lr_plus": "+4.5",
+      "lr_minus": "0.0",
+      "exam_pearl": "Sensibilidad del 100%: Si es negativo, descarta prácticamente la rotura del LCM en deportistas de lanzamiento.",
+      "clinical_tip": "El dolor debe concentrarse en el arco de 120° a 70° de flexión.",
+      "common_errors": "No mantener el valgo constante durante la extensión rápida.",
+      "differential_dx": [
+        "Epicondilalgia medial",
+        "Neuropatía cubital",
+        "Pinzamiento posteromedial"
+      ],
+      "cluster": "Batería de Estabilidad Medial de Codo",
+      "videos": [
+        {
+          "channel": "Physiotutors",
+          "channel_id": "physiotutors",
+          "title": "Moving Valgus Stress Test | UCL Tear",
+          "video_id": "w8yR3Nk6q9A",
+          "youtube_url": "https://www.youtube.com/watch?v=w8yR3Nk6q9A",
+          "embed_url": "https://www.youtube-nocookie.com/embed/w8yR3Nk6q9A"
+        }
+      ]
+    },
+    {
+      "id": "mano-durkan",
+      "name": "Test de Durkan (Compresión Carpiana)",
+      "eponym": "Durkan Carpal Compression Test",
+      "region": "muneca_mano",
+      "region_label": "Muñeca y Mano",
+      "category": "neuropatia",
+      "category_label": "Túnel Carpiano",
+      "target_structure": "Nervio mediano bajo el retináculo flexor",
+      "objective": "Aumentar la presión sobre el nervio mediano mediante compresión digital sostenida.",
+      "patient_position": "Paciente sentado con el antebrazo apoyado en supinación.",
+      "examiner_position": "Examinador sentado frente al paciente.",
+      "procedure": [
+        "1. Colocar ambos pulgares sobre el retináculo flexor (justo distal al pliegue de la muñeca).",
+        "2. Aplicar una presión firme y constante (aprox. 150 mmHg) durante 30 segundos."
+      ],
+      "positive_sign": "Hormigueo o entumecimiento en los dedos 1.°, 2.°, 3.° y mitad radial del 4.° en menos de 30 segundos.",
+      "clinical_interpretation": "Síndrome del Túnel Carpiano (STC). Es el test individual más sensible para STC.",
+      "sensitivity": "89%",
+      "specificity": "87%",
+      "sens_val": 89,
+      "spec_val": 87,
+      "lr_plus": "+6.8",
+      "lr_minus": "-0.13",
+      "exam_pearl": "Durkan es más sensible que Phalen y Tinel. La combinación de Durkan + Phalen eleva la sensibilidad diagnóstica al 96%.",
+      "clinical_tip": "El tiempo de aparición de síntomas correlaciona con la severidad del atrapamiento en electromiografía.",
+      "common_errors": "Presionar muy proximal en el antebrazo; no mantener los 30 segundos completos.",
+      "differential_dx": [
+        "Radiculopatía cervical C6-C7",
+        "Síndrome del pronador",
+        "Polineuropatía"
+      ],
+      "cluster": "Clúster del Túnel Carpiano (Durkan + Phalen + Tinel + Flick Sign)",
+      "videos": [
+        {
+          "channel": "Physiotutors",
+          "channel_id": "physiotutors",
+          "title": "Durkan's Test | Carpal Tunnel Syndrome",
+          "video_id": "8P6YqNxK9_k",
+          "youtube_url": "https://www.youtube.com/watch?v=8P6YqNxK9_k",
+          "embed_url": "https://www.youtube-nocookie.com/embed/8P6YqNxK9_k"
+        }
+      ]
+    },
+    {
+      "id": "mano-finkelstein",
+      "name": "Test de Finkelstein vs Eichhoff vs WHAT",
+      "eponym": "Finkelstein's Test / Tenosinovitis de De Quervain",
+      "region": "muneca_mano",
+      "region_label": "Muñeca y Mano",
+      "category": "tendones",
+      "category_label": "Tendones Extensores",
+      "target_structure": "1.er compartimento extensor dorsal (APL + EPB)",
+      "objective": "Tensar pasivamente los tendones del primer compartimento sobre la estiloides radial.",
+      "patient_position": "Paciente sentado con el antebrazo en posición neutra.",
+      "examiner_position": "Examinador sosteniendo la mano del paciente.",
+      "procedure": [
+        "1. Finkelstein ORIGINAL (Pasivo): El evaluador tracciona del pulgar y realiza desviación cubital pasiva rápida.",
+        "2. Eichhoff (Activo): El paciente cierra el puño sobre el pulgar y desvía cubitalmente.",
+        "3. WHAT Test: Hiperflexión activa de muñeca + abducción de pulgar."
+      ],
+      "positive_sign": "Dolor agudo sobre la estiloides radial (1.er compartimento extensor).",
+      "clinical_interpretation": "Tenosinovitis estenosante de De Quervain.",
+      "sensitivity": "88%",
+      "specificity": "90%",
+      "sens_val": 88,
+      "spec_val": 90,
+      "lr_plus": "+8.8",
+      "lr_minus": "-0.13",
+      "exam_pearl": "Finkelstein ORIGINAL es pasivo por el evaluador (alta especificidad). Eichhoff es activo por el paciente (muchos falsos positivos con rizartrosis).",
+      "clinical_tip": "Palpa el engrosamiento del 1er compartimento justo proximal a la estiloides radial.",
+      "common_errors": "Llamar Finkelstein al test de Eichhoff; confundir con rizartrosis trapeciometacarpiana.",
+      "differential_dx": [
+        "Rizartrosis CMC",
+        "Síndrome de Wartenberg (radial superficial)",
+        "Fractura de escafoides"
+      ],
+      "cluster": "Batería de Dolor Radial de Muñeca",
+      "videos": [
+        {
+          "channel": "Physiotutors",
+          "channel_id": "physiotutors",
+          "title": "Finkelstein Test | De Quervain's Tenosynovitis",
+          "video_id": "F_12y6N8_tM",
+          "youtube_url": "https://www.youtube.com/watch?v=F_12y6N8_tM",
+          "embed_url": "https://www.youtube-nocookie.com/embed/F_12y6N8_tM"
+        }
+      ]
+    },
+    {
+      "id": "mano-froment",
+      "name": "Signo de Froment",
+      "eponym": "Froment's Paper Sign",
+      "region": "muneca_mano",
+      "region_label": "Muñeca y Mano",
+      "category": "neuropatia",
+      "category_label": "Nervio Cubital",
+      "target_structure": "Músculo aductor del pulgar (nervio cubital)",
+      "objective": "Detectar debilidad del aductor del pulgar por lesión del nervio cubital.",
+      "patient_position": "Paciente sentado frente al examinador.",
+      "examiner_position": "Examinador sujetando una hoja de papel.",
+      "procedure": [
+        "1. Pedir al paciente que sostenga una hoja de papel entre el pulpejo del pulgar y el lateral del índice.",
+        "2. El examinador tira firmemente de la hoja intentando retirarla."
+      ],
+      "positive_sign": "Flexión marcada de la articulación interfalángica del pulgar para retener el papel (usando el flexor largo inervado por el mediano para compensar).",
+      "clinical_interpretation": "Paresia o parálisis del músculo aductor del pulgar por compromiso del nervio cubital.",
+      "sensitivity": "88%",
+      "specificity": "98%",
+      "sens_val": 88,
+      "spec_val": 98,
+      "lr_plus": "+44.0",
+      "lr_minus": "-0.12",
+      "exam_pearl": "Si además se hiperextiende la articulación metacarpofalángica del pulgar, se denomina Signo de Jeanne.",
+      "clinical_tip": "Pide siempre que realice la pinza con ambas manos a la vez para comparar la flexión compensatoria.",
+      "common_errors": "Permitir que use pinza pulpo-pulpar en vez de pinza lateral.",
+      "differential_dx": [
+        "Parálisis cubital alta o baja",
+        "Canal de Guyon Zona II"
+      ],
+      "cluster": "Tríada Cubital Motora (Froment + Jeanne + Wartenberg Sign)",
+      "videos": [
+        {
+          "channel": "Physiotutors",
+          "channel_id": "physiotutors",
+          "title": "Froment's Sign | Ulnar Nerve Palsy",
+          "video_id": "9Y8K6zL0_7w",
+          "youtube_url": "https://www.youtube.com/watch?v=9Y8K6zL0_7w",
+          "embed_url": "https://www.youtube-nocookie.com/embed/9Y8K6zL0_7w"
+        }
+      ]
+    },
+    {
+      "id": "cervical-spurling",
+      "name": "Test de Spurling",
+      "eponym": "Spurling's Foraminal Compression Test",
+      "region": "cervical",
+      "region_label": "Columna Cervical",
+      "category": "radiculopatia",
+      "category_label": "Radiculopatía Cervical",
+      "target_structure": "Raíces nerviosas cervicales (C5 a C8) en el foramen intervertebral",
+      "objective": "Reproducir síntomas radiculares estrechando el agujero de conjunción mediante compresión axial combinada.",
+      "patient_position": "Paciente sentado en posición neutra.",
+      "examiner_position": "Examinador detrás del paciente.",
+      "procedure": [
+        "1. Inclinar lateralmente la cabeza hacia el lado sintomático.",
+        "2. Extender ligeramente el cuello.",
+        "3. Aplicar una compresión axial suave y progresiva hacia abajo sobre el vértex craneal (7-10 kg)."
+      ],
+      "positive_sign": "Reproducción de dolor radicular o parestesias irradiadas hacia el miembro superior ipsilateral.",
+      "clinical_interpretation": "Compresión foraminal de raíz cervical (hernia discal o uncoartrosis).",
+      "sensitivity": "50%",
+      "specificity": "96%",
+      "sens_val": 50,
+      "spec_val": 96,
+      "lr_plus": "+12.5",
+      "lr_minus": "-0.52",
+      "exam_pearl": "Alta especificidad pero baja sensibilidad: Spurling positivo CONFIRMA radiculopatía, pero uno negativo NO la descarta (SpPin).",
+      "clinical_tip": "Detén la maniobra de inmediato en cuanto se reproduzca el dolor irradiado.",
+      "common_errors": "Considerar positivo el dolor cervical local (que suele ser facetario); comprimir bruscamente.",
+      "differential_dx": [
+        "Síndrome facetario cervical",
+        "Desfiladero torácico",
+        "Tendinopatía de hombro"
+      ],
+      "cluster": "Clúster de Wainner para Radiculopatía Cervical",
+      "videos": [
+        {
+          "channel": "Educom Continuing Education™",
+          "channel_id": "educom",
+          "title": "Spurling's Test | Cervical Radiculopathy",
+          "video_id": "8p-Y0k49VYc",
+          "youtube_url": "https://youtu.be/8p-Y0k49VYc",
+          "embed_url": "https://www.youtube-nocookie.com/embed/8p-Y0k49VYc"
+        },
+        {
+          "channel": "Physiotutors",
+          "channel_id": "physiotutors",
+          "title": "Spurling's Test | Cervical Radicular Syndrome",
+          "video_id": "G1-J441NqY8",
+          "youtube_url": "https://www.youtube.com/watch?v=G1-J441NqY8",
+          "embed_url": "https://www.youtube-nocookie.com/embed/G1-J441NqY8"
+        }
+      ]
+    },
+    {
+      "id": "cervical-distraction",
+      "name": "Test de Distracción Cervical",
+      "eponym": "Cervical Distraction Test",
+      "region": "cervical",
+      "region_label": "Columna Cervical",
+      "category": "radiculopatia",
+      "category_label": "Radiculopatía Cervical",
+      "target_structure": "Foramen intervertebral cervical",
+      "objective": "Aliviar la compresión foraminal abriendo el espacio intervertebral mediante tracción axial.",
+      "patient_position": "Paciente en decúbito supino relajado.",
+      "examiner_position": "Examinador en la cabecera de la camilla.",
+      "procedure": [
+        "1. Colocar una mano bajo el occipucio y la otra en el mentón/frente.",
+        "2. Aplicar tracción axial sostenida de 10-15 kg durante 20-30 segundos."
+      ],
+      "positive_sign": "Alivio significativo o desaparición del dolor radicular en el brazo durante la tracción.",
+      "clinical_interpretation": "Confirma compromiso foraminal o discal cervical por descompresión mecánica.",
+      "sensitivity": "42%",
+      "specificity": "95%",
+      "sens_val": 42,
+      "spec_val": 95,
+      "lr_plus": "+8.4",
+      "lr_minus": "-0.61",
+      "exam_pearl": "Spurling PROVOCA; Distracción ALIVIA; Signo de Bakody (mano sobre la cabeza) ALIVIA.",
+      "clinical_tip": "La tracción debe ser suave y sin forzar hiperextensión cervical.",
+      "common_errors": "Traccionar en extensión en vez de neutro/ligera flexión.",
+      "differential_dx": [
+        "Dolor miofascial cervical",
+        "Cefalea cervicogénica"
+      ],
+      "cluster": "Clúster de Wainner para Radiculopatía Cervical",
+      "videos": [
+        {
+          "channel": "Physiotutors",
+          "channel_id": "physiotutors",
+          "title": "Cervical Distraction Test | Cervical Radiculopathy",
+          "video_id": "k8P7V9wX1_M",
+          "youtube_url": "https://www.youtube.com/watch?v=k8P7V9wX1_M",
+          "embed_url": "https://www.youtube-nocookie.com/embed/k8P7V9wX1_M"
+        }
+      ]
+    },
+    {
+      "id": "lumbar-lasegue",
+      "name": "Test de Lasègue (Straight Leg Raise)",
+      "eponym": "Prueba de Elevación de Pierna Recta (SLR)",
+      "region": "lumbar",
+      "region_label": "Columna Lumbar y Torácica",
+      "category": "radiculopatia",
+      "category_label": "Radiculopatía Lumbar",
+      "target_structure": "Raíces nerviosas L4, L5 y S1 y nervio ciático",
+      "objective": "Tensar el nervio ciático para reproducir el dolor radicular por compresión discal.",
+      "patient_position": "Paciente en decúbito supino completo.",
+      "examiner_position": "Examinador junto a la pierna a evaluar.",
+      "procedure": [
+        "1. Con rodilla en extensión completa, elevar pasiva y lentamente la pierna sosteniendo el talón.",
+        "2. Registrar el ángulo en el que aparece la irradiación ciática."
+      ],
+      "positive_sign": "Dolor agudo punzante irradiado por debajo de la rodilla (dermatoma L4, L5 o S1) entre 30° y 70° de elevación.",
+      "clinical_interpretation": "Hernia discal lumbar o compresión de raíces ciáticas.",
+      "sensitivity": "86%",
+      "specificity": "42%",
+      "sens_val": 86,
+      "spec_val": 42,
+      "lr_plus": "+1.5",
+      "lr_minus": "-0.33",
+      "exam_pearl": "Alta sensibilidad (86%) y baja especificidad (42%): El Lasègue sirve para descartar ciática. Confirma con Bragard o Bowstring.",
+      "clinical_tip": "El dolor DEBE sobrepasar la rodilla para ser positivo. Si solo duele detrás del muslo, es tensión isquiotibial.",
+      "common_errors": "Elevar la pierna con rodilla semiflexionada; considerar positivo el dolor lumbar local.",
+      "differential_dx": [
+        "Hernia discal lumbar",
+        "Síndrome del piriforme",
+        "Disfunción sacroilíaca"
+      ],
+      "cluster": "Batería de Tensión Neural Ciática",
+      "videos": [
+        {
+          "channel": "Physiotutors",
+          "channel_id": "physiotutors",
+          "title": "Straight Leg Raise (SLR) Test / Lasègue Test | Lumbar Radicular Syndrome",
+          "video_id": "xyJUIhsL4lg",
+          "youtube_url": "https://youtu.be/xyJUIhsL4lg",
+          "embed_url": "https://www.youtube-nocookie.com/embed/xyJUIhsL4lg"
+        },
+        {
+          "channel": "Educom Continuing Education™",
+          "channel_id": "educom",
+          "title": "Straight Leg Raise Test (Lasegue) | Lumbar Spine",
+          "video_id": "8p-Y0k49VYc",
+          "youtube_url": "https://youtu.be/8p-Y0k49VYc",
+          "embed_url": "https://www.youtube-nocookie.com/embed/8p-Y0k49VYc"
+        }
+      ]
+    },
+    {
+      "id": "lumbar-slump",
+      "name": "Slump Test",
+      "eponym": "Prueba de Colapso Neural de Maitland",
+      "region": "lumbar",
+      "region_label": "Columna Lumbar y Torácica",
+      "category": "neurodinamica",
+      "category_label": "Neurodinámica Lumbosacra",
+      "target_structure": "Sistema neuromeníngeo completo: médula espinal, saco dural y raíces lumbares",
+      "objective": "Aplicar máxima tensión al neuroeje de forma progresiva.",
+      "patient_position": "Paciente sentado al borde de la camilla con muslos apoyados.",
+      "examiner_position": "Examinador junto al paciente guiando los pasos.",
+      "procedure": [
+        "1. Flexión del tronco dorsal y lumbar (postura 'encorvada').",
+        "2. Flexión cervical (barbilla al pecho) con sobrepresión suave.",
+        "3. Extensión activa de la rodilla afectada.",
+        "4. Dorsiflexión pasiva del tobillo.",
+        "5. Maniobra de diferenciación: Extender el cuello manteniendo el resto de la postura."
+      ],
+      "positive_sign": "Reproducción del dolor radicular que DISMINUYE al levantar la cabeza (extensión cervical).",
+      "clinical_interpretation": "Mecanosensibilidad neural aumentada o radiculopatía lumbosacra.",
+      "sensitivity": "87%",
+      "specificity": "84%",
+      "sens_val": 87,
+      "spec_val": 84,
+      "lr_plus": "+5.4",
+      "lr_minus": "-0.15",
+      "exam_pearl": "El paso 5 es la prueba reina: Si al levantar la cabeza se alivia el dolor en la pierna, el origen es 100% neural y no muscular.",
+      "clinical_tip": "Más sensible que el Lasègue en estenosis de canal leve o radiculopatías crónicas.",
+      "common_errors": "No realizar la diferenciación cervical.",
+      "differential_dx": [
+        "Fibrosis postquirúrgica",
+        "Estenosis de canal lumbar",
+        "Tensión isquiotibial"
+      ],
+      "cluster": "Batería de Tensión Neural",
+      "videos": [
+        {
+          "channel": "Educom Continuing Education™",
+          "channel_id": "educom",
+          "title": "Slump Test | Neurological & Spinal Examination",
+          "video_id": "8p-Y0k49VYc",
+          "youtube_url": "https://youtu.be/8p-Y0k49VYc",
+          "embed_url": "https://www.youtube-nocookie.com/embed/8p-Y0k49VYc"
+        },
+        {
+          "channel": "Physiotutors",
+          "channel_id": "physiotutors",
+          "title": "Slump Test | Neurodynamic Examination",
+          "video_id": "e83eQh1Y-q4",
+          "youtube_url": "https://www.youtube.com/watch?v=e83eQh1Y-q4",
+          "embed_url": "https://www.youtube-nocookie.com/embed/e83eQh1Y-q4"
+        }
+      ]
+    },
+    {
+      "id": "si-thigh-thrust",
+      "name": "Thigh Thrust Test",
+      "eponym": "Posterior Shear Test / Empuje Femoral",
+      "region": "sacroiliaca",
+      "region_label": "Pelvis y Art. Sacroilíaca",
+      "category": "sacroiliaca",
+      "category_label": "Clúster de Laslett (Gold Standard)",
+      "target_structure": "Articulación sacroilíaca ipsilateral",
+      "objective": "Aplicar cizallamiento anteroposterior sobre la articulación sacroilíaca a través del fémur.",
+      "patient_position": "Paciente en decúbito supino.",
+      "examiner_position": "Examinador al lado de la camilla con una mano colocada bajo el sacro.",
+      "procedure": [
+        "1. Cadera y rodilla ipsilateral flexionadas a 90°.",
+        "2. Colocar una mano bajo el sacro para estabilizarlo.",
+        "3. Aplicar una fuerza axial descendente firme a lo largo del fémur hacia la camilla."
+      ],
+      "positive_sign": "Reproducción del dolor familiar en la región sacroilíaca posterior o nalga profunda.",
+      "clinical_interpretation": "Disfunción sacroilíaca. Es la prueba individual más sensible del Clúster de Laslett.",
+      "sensitivity": "88%",
+      "specificity": "75%",
+      "sens_val": 88,
+      "spec_val": 75,
+      "lr_plus": "+4.16",
+      "lr_minus": "-0.16",
+      "exam_pearl": "Piedra angular de Laslett: Si solo puedes hacer un test sacroilíaco, realiza el Thigh Thrust (88% sensibilidad).",
+      "clinical_tip": "Mantén los 90° exactos de flexión de cadera sin rotación.",
+      "common_errors": "No colocar la mano debajo del sacro para crear el fulcro rígido.",
+      "differential_dx": [
+        "Disfunción sacroilíaca",
+        "Artrosis de cadera",
+        "Síndrome del piriforme"
+      ],
+      "cluster": "Clúster de Laslett (≥3 de 5 positivas = 91% probabilidad post-test de dolor sacroilíaco)",
+      "videos": [
+        {
+          "channel": "Physiotutors",
+          "channel_id": "physiotutors",
+          "title": "Thigh Thrust Test | SIJ Pain Provocation",
+          "video_id": "N9l-FqfPz6A",
+          "youtube_url": "https://www.youtube.com/watch?v=N9l-FqfPz6A",
+          "embed_url": "https://www.youtube-nocookie.com/embed/N9l-FqfPz6A"
+        }
+      ]
+    },
+    {
+      "id": "si-distraction",
+      "name": "Sacroiliac Distraction Test",
+      "eponym": "ASIS Distraction Test / Gapping Test",
+      "region": "sacroiliaca",
+      "region_label": "Pelvis y Art. Sacroilíaca",
+      "category": "sacroiliaca",
+      "category_label": "Clúster de Laslett (Gold Standard)",
+      "target_structure": "Ligamentos sacroilíacos anteriores y articulación sacroilíaca",
+      "objective": "Separar las alas ilíacas anteriormente para tensar la cara anterior y comprimir la cara posterior de la ASI.",
+      "patient_position": "Paciente en decúbito supino.",
+      "examiner_position": "Examinador de pie con los brazos cruzados sobre la pelvis del paciente.",
+      "procedure": [
+        "1. Colocar las eminencias tenares de ambas manos sobre las caras mediales de ambas EIAS.",
+        "2. Aplicar fuerza divergente hacia afuera y hacia la camilla durante 5-10 segundos."
+      ],
+      "positive_sign": "Reproducción del dolor sacroilíaco o glúteo familiar.",
+      "clinical_interpretation": "Afectación de la articulación sacroilíaca.",
+      "sensitivity": "60%",
+      "specificity": "89%",
+      "sens_val": 60,
+      "spec_val": 89,
+      "lr_plus": "+4.0",
+      "lr_minus": "-0.45",
+      "exam_pearl": "Alta especificidad en el clúster de Laslett para confirmar dolor sacroilíaco.",
+      "clinical_tip": "Cruzar los brazos permite usar el peso corporal de forma uniforme.",
+      "common_errors": "Empujar recto hacia abajo sin separación lateral.",
+      "differential_dx": [
+        "Sacroileítis",
+        "Disfunción de sínfisis púbica"
+      ],
+      "cluster": "Clúster de Laslett",
+      "videos": [
+        {
+          "channel": "Educom Continuing Education™",
+          "channel_id": "educom",
+          "title": "Sacroiliac Distraction Test | Pelvic Examination",
+          "video_id": "8p-Y0k49VYc",
+          "youtube_url": "https://youtu.be/8p-Y0k49VYc",
+          "embed_url": "https://www.youtube-nocookie.com/embed/8p-Y0k49VYc"
+        },
+        {
+          "channel": "Physiotutors",
+          "channel_id": "physiotutors",
+          "title": "SI Joint Distraction Test | Sacroiliac Pain",
+          "video_id": "8P6YqNxK9_k",
+          "youtube_url": "https://www.youtube.com/watch?v=8P6YqNxK9_k",
+          "embed_url": "https://www.youtube-nocookie.com/embed/8P6YqNxK9_k"
+        }
+      ]
+    },
+    {
+      "id": "cadera-fadir",
+      "name": "Test FADIR (Pinzamiento Femoroacetabular)",
+      "eponym": "FADIR Test / Anterior Impingement Test",
+      "region": "cadera",
+      "region_label": "Cadera y Coxofemoral",
+      "category": "pinzamiento",
+      "category_label": "Pinzamiento Femoroacetabular (FAI)",
+      "target_structure": "Labrum acetabular anterosuperior y cuello femoral",
+      "objective": "Provocar el choque del cuello femoral contra el reborde acetabular anterosuperior.",
+      "patient_position": "Paciente en decúbito supino.",
+      "examiner_position": "Examinador junto a la pierna a evaluar.",
+      "procedure": [
+        "1. Llevar la cadera a 90° de flexión.",
+        "2. Adicionar aducción y rotación interna pasiva forzada.",
+        "3. Aplicar ligera compresión axial hacia el acetábulo."
+      ],
+      "positive_sign": "Dolor punzante o pellizco en la región inguinal anterior con o sin clic.",
+      "clinical_interpretation": "Pinzamiento femoroacetabular (FAI Cam o Pincer) o rotura del labrum acetabular.",
+      "sensitivity": "92%",
+      "specificity": "20%",
+      "sens_val": 92,
+      "spec_val": 20,
+      "lr_plus": "+1.15",
+      "lr_minus": "-0.08",
+      "exam_pearl": "Sensibilidad extrema (>90%): Si FADIR es negativo, descarta prácticamente el pinzamiento femoroacetabular.",
+      "clinical_tip": "Compara con FABER: dolor inguinal con FADIR = cadera anterior; dolor posterior con FABER = sacroilíaca.",
+      "common_errors": "No rotar internamente al máximo.",
+      "differential_dx": [
+        "Rotura labral",
+        "Coxartrosis",
+        "Tendinopatía de psoas"
+      ],
+      "cluster": "Batería de Labrum de Cadera",
+      "videos": [
+        {
+          "channel": "Physiotutors",
+          "channel_id": "physiotutors",
+          "title": "FADIR Test | Femoroacetabular Impingement (FAI)",
+          "video_id": "hUa3X4sT5zU",
+          "youtube_url": "https://www.youtube.com/watch?v=hUa3X4sT5zU",
+          "embed_url": "https://www.youtube-nocookie.com/embed/hUa3X4sT5zU"
+        }
+      ]
+    },
+    {
+      "id": "cadera-faber",
+      "name": "Test FABER (Patrick)",
+      "eponym": "Patrick's Test / Prueba del 4",
+      "region": "cadera",
+      "region_label": "Cadera y Coxofemoral",
+      "category": "articular",
+      "category_label": "Articulación Coxofemoral vs Sacroilíaca",
+      "target_structure": "Articulación coxofemoral, articulación sacroilíaca e iliopsoas",
+      "objective": "Diferenciar patología de cadera de disfunción sacroilíaca mediante posición en '4'.",
+      "patient_position": "Paciente en decúbito supino.",
+      "examiner_position": "Examinador junto al lado a evaluar.",
+      "procedure": [
+        "1. Colocar el maléolo externo sobre la rodilla contralateral (posición en '4').",
+        "2. Estabilizar la EIAS contralateral con una mano.",
+        "3. Aplicar suave presión vertical sobre la rodilla flexionada hacia la camilla."
+      ],
+      "positive_sign": "Dolor ANTERIOR en ingle = Cadera / Psoas. Dolor POSTERIOR en nalga = Articulación Sacroilíaca.",
+      "clinical_interpretation": "Patología coxofemoral vs disfunción sacroilíaca según la localización del dolor.",
+      "sensitivity": "70%",
+      "specificity": "75%",
+      "sens_val": 70,
+      "spec_val": 75,
+      "lr_plus": "+2.8",
+      "lr_minus": "-0.40",
+      "exam_pearl": "'FABER: Si duele por DELANTE es CADERA; si duele por DETRÁS es SACROILÍACA'.",
+      "clinical_tip": "Mide la distancia de la rodilla a la camilla: >4 cm de asimetría indica restricción capsular.",
+      "common_errors": "No estabilizar la pelvis contralateral.",
+      "differential_dx": [
+        "Coxartrosis",
+        "Sacroileítis",
+        "Tendinopatía de aductores"
+      ],
+      "cluster": "Batería Diferencial Cadera vs Sacroilíaca",
+      "videos": [
+        {
+          "channel": "Physiotutors",
+          "channel_id": "physiotutors",
+          "title": "FABER (Patrick's) Test | Hip & SIJ Assessment",
+          "video_id": "6Yf8g4bA11U",
+          "youtube_url": "https://www.youtube.com/watch?v=6Yf8g4bA11U",
+          "embed_url": "https://www.youtube-nocookie.com/embed/6Yf8g4bA11U"
+        }
+      ]
+    },
+    {
+      "id": "rodilla-lachman",
+      "name": "Test de Lachman",
+      "eponym": "Lachman Test / Cajón a 20° de Ritchie",
+      "region": "rodilla",
+      "region_label": "Rodilla",
+      "category": "ligamentos",
+      "category_label": "Ligamento Cruzado Anterior (LCA)",
+      "target_structure": "Ligamento Cruzado Anterior (LCA)",
+      "objective": "Evaluar la traslación tibial anterior pura y la calidad del tope terminal.",
+      "patient_position": "Paciente en decúbito supino con muslo relajado.",
+      "examiner_position": "Examinador junto a la rodilla evaluada.",
+      "procedure": [
+        "1. Flexionar la rodilla a 20-30°.",
+        "2. Estabilizar el fémur distal con una mano.",
+        "3. Con la otra mano en la tibia proximal posterior, aplicar tracción anterior firme.",
+        "4. Evaluar milímetros de desplazamiento y firmeza del tope."
+      ],
+      "positive_sign": "Traslación anterior aumentada (>3 mm vs sano) y tope final blando o ausente.",
+      "clinical_interpretation": "Ruptura del LCA. Gold standard de la exploración física del LCA.",
+      "sensitivity": "89%",
+      "specificity": "96%",
+      "sens_val": 89,
+      "spec_val": 96,
+      "lr_plus": "+22.2",
+      "lr_minus": "-0.11",
+      "exam_pearl": "Lachman es más sensible que el Cajón Anterior a 90° en la fase aguda porque los meniscos no bloquean la tibia.",
+      "clinical_tip": "Grados: I (3-5 mm tope firme), II (5-10 mm tope blando), III (>10 mm sin tope).",
+      "common_errors": "Flexionar la rodilla a más de 30°; no relajar los isquiotibiales.",
+      "differential_dx": [
+        "Ruptura del LCA",
+        "Ruptura del LCP (falso positivo de Lachman)"
+      ],
+      "cluster": "Tríada de Inestabilidad del LCA (Lachman + Pivot Shift + Lever Sign)",
+      "videos": [
+        {
+          "channel": "Physiotutors",
+          "channel_id": "physiotutors",
+          "title": "Lachman Test | Anterior Cruciate Ligament (ACL) Tear",
+          "video_id": "7P_QkQ5tP-Q",
+          "youtube_url": "https://www.youtube.com/watch?v=7P_QkQ5tP-Q",
+          "embed_url": "https://www.youtube-nocookie.com/embed/7P_QkQ5tP-Q"
+        },
+        {
+          "channel": "Educom Continuing Education™",
+          "channel_id": "educom",
+          "title": "Lachman's Test | Knee Physical Examination",
+          "video_id": "8p-Y0k49VYc",
+          "youtube_url": "https://youtu.be/8p-Y0k49VYc",
+          "embed_url": "https://www.youtube-nocookie.com/embed/8p-Y0k49VYc"
+        }
+      ]
+    },
+    {
+      "id": "rodilla-mcmurray",
+      "name": "Test de McMurray",
+      "eponym": "McMurray's Meniscal Test",
+      "region": "rodilla",
+      "region_label": "Rodilla",
+      "category": "meniscos",
+      "category_label": "Meniscos y Cartílago",
+      "target_structure": "Meniscos medial y lateral",
+      "objective": "Atrapar un fragmento meniscal roto entre fémur y tibia mediante rotación y extensión.",
+      "patient_position": "Paciente en decúbito supino.",
+      "examiner_position": "Examinador sosteniendo el talón y palpando la interlínea articular.",
+      "procedure": [
+        "1. Flexionar la rodilla al máximo.",
+        "2. Menisco Medial: Rotación externa de tibia + valgo, extendiendo lentamente la rodilla.",
+        "3. Menisco Lateral: Rotación interna de tibia + varo, extendiendo lentamente."
+      ],
+      "positive_sign": "Chasquido o resalte palpable/audible ('click') en la interlínea con dolor.",
+      "clinical_interpretation": "Desgarro meniscal (cuerno posterior o asa de cubo).",
+      "sensitivity": "61%",
+      "specificity": "84%",
+      "sens_val": 61,
+      "spec_val": 84,
+      "lr_plus": "+3.8",
+      "lr_minus": "-0.46",
+      "exam_pearl": "El clic palpable en la interlínea es mucho más específico que el dolor aislado.",
+      "clinical_tip": "Combínalo con Thessaly a 20° para maximizar la detección de desgarros degenerativos.",
+      "common_errors": "Confundir chasquido rotuliano con resalte meniscal.",
+      "differential_dx": [
+        "Desgarro meniscal",
+        "Plica sinovial mediopatelar",
+        "Cuerpo libre"
+      ],
+      "cluster": "Clúster Meniscal (McMurray + Thessaly + Apley + Bloqueo mecánico)",
+      "videos": [
+        {
+          "channel": "Physiotutors",
+          "channel_id": "physiotutors",
+          "title": "McMurray Test | Meniscus Damage",
+          "video_id": "O3r3G_nFw9c",
+          "youtube_url": "https://www.youtube.com/watch?v=O3r3G_nFw9c",
+          "embed_url": "https://www.youtube-nocookie.com/embed/O3r3G_nFw9c"
+        },
+        {
+          "channel": "Educom Continuing Education™",
+          "channel_id": "educom",
+          "title": "McMurray's Test for Meniscal Tear | Knee Exam",
+          "video_id": "8p-Y0k49VYc",
+          "youtube_url": "https://youtu.be/8p-Y0k49VYc",
+          "embed_url": "https://www.youtube-nocookie.com/embed/8p-Y0k49VYc"
+        }
+      ]
+    },
+    {
+      "id": "tobillo-thompson",
+      "name": "Test de Thompson (Simmonds)",
+      "eponym": "Thompson Squeeze Test / Signo de Simmonds",
+      "region": "tobillo_pie",
+      "region_label": "Tobillo y Pie",
+      "category": "tendones",
+      "category_label": "Tendón de Aquiles",
+      "target_structure": "Tendón de Aquiles (gastrocnemio-sóleo)",
+      "objective": "Evaluar la continuidad mecánica del tendón de Aquiles.",
+      "patient_position": "Paciente en decúbito prono con pies colgando fuera de la camilla.",
+      "examiner_position": "Examinador a los pies de la camilla.",
+      "procedure": [
+        "1. Con la pantorrilla relajada, comprimir con una mano el tercio medio del vientre muscular del gastrocnemio."
+      ],
+      "positive_sign": "Ausencia de flexión plantar del pie al apretar la pantorrilla.",
+      "clinical_interpretation": "Ruptura completa del tendón de Aquiles. Urgencia quirúrgica/ortopédica.",
+      "sensitivity": "97%",
+      "specificity": "96%",
+      "sens_val": 97,
+      "spec_val": 96,
+      "lr_plus": "+24.2",
+      "lr_minus": "-0.03",
+      "exam_pearl": "¡Alerta!: Un paciente con rotura de Aquiles puede flexionar el pie voluntariamente en descarga usando los dedos. ¡El Thompson es la prueba definitiva!",
+      "clinical_tip": "Palpa la brecha o signo del hachazo 2-6 cm proximal al calcáneo.",
+      "common_errors": "Evaluar con el pie apoyado en la camilla.",
+      "differential_dx": [
+        "Rotura del tendón de Aquiles",
+        "Rotura del plantar delgado",
+        "TVP"
+      ],
+      "cluster": "Batería de Rotura Aquílea (Thompson + Hachazo + Matles)",
+      "videos": [
+        {
+          "channel": "Physiotutors",
+          "channel_id": "physiotutors",
+          "title": "Thompson Test | Achilles Tendon Rupture",
+          "video_id": "7_G8a1h_86s",
+          "youtube_url": "https://www.youtube.com/watch?v=7_G8a1h_86s",
+          "embed_url": "https://www.youtube-nocookie.com/embed/7_G8a1h_86s"
+        }
+      ]
+    },
+    {
+      "id": "tobillo-windlass",
+      "name": "Test de Windlass (Fascia Plantar)",
+      "eponym": "Mecanismo de Molinete / Windlass Test",
+      "region": "tobillo_pie",
+      "region_label": "Tobillo y Pie",
+      "category": "fascia",
+      "category_label": "Fascia Plantar",
+      "target_structure": "Fascia plantar y tubérculo medial del calcáneo",
+      "objective": "Tensar la fascia plantar extendiendo el primer dedo para reproducir el dolor.",
+      "patient_position": "Paciente en bipedestación sobre un escalón con dedos libres o sentado.",
+      "examiner_position": "Examinador sosteniendo el pie.",
+      "procedure": [
+        "1. Fijar el talón y el tobillo.",
+        "2. Dorsiflexionar pasivamente la articulación MCF del primer dedo (hallux) hacia la máxima extensión."
+      ],
+      "positive_sign": "Dolor agudo en la inserción proximal de la fascia plantar (calcáneo medial).",
+      "clinical_interpretation": "Fasciopatía plantar (fascitis plantar).",
+      "sensitivity": "45%",
+      "specificity": "99%",
+      "sens_val": 45,
+      "spec_val": 99,
+      "lr_plus": "+45.0",
+      "lr_minus": "-0.55",
+      "exam_pearl": "Especificidad del 99%: Si es positivo, confirma la fasciopatía plantar sin necesidad inmediata de ecografía.",
+      "clinical_tip": "La prueba en carga (de pie) es más sensible que en descarga.",
+      "common_errors": "No extender completamente la articulación metatarsofalángica del hallux.",
+      "differential_dx": [
+        "Fasciopatía plantar",
+        "Atrapamiento del nervio de Baxter",
+        "Fractura de estrés de calcáneo"
+      ],
+      "cluster": "Batería de Dolor Plantar del Talón",
+      "videos": [
+        {
+          "channel": "Physiotutors",
+          "channel_id": "physiotutors",
+          "title": "Windlass Test | Plantar Fasciitis",
+          "video_id": "7L9Y0mK_w1E",
+          "youtube_url": "https://www.youtube.com/watch?v=7L9Y0mK_w1E",
+          "embed_url": "https://www.youtube-nocookie.com/embed/7L9Y0mK_w1E"
+        }
+      ]
+    },
+    {
+      "id": "hombro-speed",
+      "name": "Test de Speed",
+      "eponym": "Speed's Test / Bíceps en Extensión",
+      "region": "hombro",
+      "region_label": "Hombro y Cintura Escapular",
+      "category": "biceps",
+      "category_label": "Porción Larga del Bíceps",
+      "target_structure": "Tendón de la porción larga del bíceps en corredera bicipital",
+      "objective": "Evaluar la tendinopatía de la PLB bajo tracción resistida.",
+      "patient_position": "Paciente de pie o sentado.",
+      "examiner_position": "Examinador frente al paciente.",
+      "procedure": [
+        "1. Brazo a 90° de flexión anterior, codo en extensión y antebrazo en supinación (palma arriba).",
+        "2. El examinador aplica resistencia hacia abajo mientras el paciente resiste en flexión."
+      ],
+      "positive_sign": "Dolor selectivo localizado en la corredera bicipital.",
+      "clinical_interpretation": "Tendinopatía de la porción larga del bíceps o lesión del anclaje superior.",
+      "sensitivity": "61%",
+      "specificity": "71%",
+      "sens_val": 61,
+      "spec_val": 71,
+      "lr_plus": "+2.1",
+      "lr_minus": "-0.55",
+      "exam_pearl": "Speed evalúa el tendón bajo tracción. Combínalo con Yergason para evaluar estabilidad.",
+      "clinical_tip": "Palpa la corredera con el pulgar mientras el paciente realiza la fuerza.",
+      "common_errors": "Flexionar el codo o pronar el antebrazo.",
+      "differential_dx": [
+        "Tendinopatía bicipital",
+        "Lesión SLAP",
+        "Pinzamiento subacromial"
+      ],
+      "cluster": "Batería Bicipital (Speed + Yergason + Uppercut)",
+      "videos": [
+        {
+          "channel": "Physiotutors",
+          "channel_id": "physiotutors",
+          "title": "Speed's Test | Biceps Tendinopathy",
+          "video_id": "vL98Yn3M7rQ",
+          "youtube_url": "https://www.youtube.com/watch?v=vL98Yn3M7rQ",
+          "embed_url": "https://www.youtube-nocookie.com/embed/vL98Yn3M7rQ"
+        }
+      ]
+    },
+    {
+      "id": "hombro-yergason",
+      "name": "Test de Yergason",
+      "eponym": "Yergason's Test / Ligamento Transverso Humeral",
+      "region": "hombro",
+      "region_label": "Hombro y Cintura Escapular",
+      "category": "biceps",
+      "category_label": "Porción Larga del Bíceps",
+      "target_structure": "Tendón de la PLB y ligamento transverso humeral",
+      "objective": "Evaluar la estabilidad del tendón bicipital en el surco y descartar subluxación.",
+      "patient_position": "Paciente sentado con codo a 90° y antebrazo pronado.",
+      "examiner_position": "Examinador palpando la corredera bicipital y sujetando la muñeca.",
+      "procedure": [
+        "1. Codo pegado al cuerpo a 90° de flexión, antebrazo pronado.",
+        "2. El paciente realiza supinación activa contra la resistencia firme del examinador."
+      ],
+      "positive_sign": "Dolor o chasquido palpable del tendón saliéndose de la corredera.",
+      "clinical_interpretation": "Inestabilidad de la PLB por rotura del ligamento transverso humeral.",
+      "sensitivity": "50%",
+      "specificity": "89%",
+      "sens_val": 50,
+      "spec_val": 89,
+      "lr_plus": "+4.5",
+      "lr_minus": "-0.56",
+      "exam_pearl": "Yergason evalúa la ESTABILIDAD del tendón en la corredera; Speed evalúa la TRACCIÓN.",
+      "clinical_tip": "El chasquido durante la supinación confirma subluxación medial del tendón.",
+      "common_errors": "No palpar la corredera bicipital durante la maniobra.",
+      "differential_dx": [
+        "Subluxación bicipital",
+        "Desgarro del subescapular"
+      ],
+      "cluster": "Batería Bicipital",
+      "videos": [
+        {
+          "channel": "Physiotutors",
+          "channel_id": "physiotutors",
+          "title": "Yergason's Test | Biceps & Transverse Ligament",
+          "video_id": "8P6YqNxK9_k",
+          "youtube_url": "https://www.youtube.com/watch?v=8P6YqNxK9_k",
+          "embed_url": "https://www.youtube-nocookie.com/embed/8P6YqNxK9_k"
+        }
+      ]
+    },
+    {
+      "id": "hombro-sulcus",
+      "name": "Sulcus Sign (Signo del Surco)",
+      "eponym": "Sulcus Test / Inestabilidad Inferior",
+      "region": "hombro",
+      "region_label": "Hombro y Cintura Escapular",
+      "category": "inestabilidad",
+      "category_label": "Inestabilidad Glenohumeral",
+      "target_structure": "Intervalo de los rotadores y ligamento glenohumeral superior",
+      "objective": "Evaluar la laxitud inferior glenohumeral y la incompetencia del intervalo rotador.",
+      "patient_position": "Paciente sentado con el brazo relajado al costado.",
+      "examiner_position": "Examinador detrás o al lado del paciente.",
+      "procedure": [
+        "1. Traccionar el brazo hacia abajo desde el codo con fuerza axial uniforme.",
+        "2. Observar la aparición de un escalón o depresión bajo el acromion."
+      ],
+      "positive_sign": "Depresión o surco visible/palpable >1 cm entre acromion y cabeza humeral.",
+      "clinical_interpretation": "Inestabilidad glenohumeral inferior o hiperlaxitud multidireccional (AMBRI).",
+      "sensitivity": "72%",
+      "specificity": "85%",
+      "sens_val": 72,
+      "spec_val": 85,
+      "lr_plus": "+4.8",
+      "lr_minus": "-0.33",
+      "exam_pearl": "Repite la tracción en rotación externa: si el surco desaparece, el intervalo de los rotadores está intacto.",
+      "clinical_tip": "Compara siempre con el lado sano para distinguir hiperlaxitud constitucional de inestabilidad.",
+      "common_errors": "Traccionar con el deltoides contraído.",
+      "differential_dx": [
+        "Inestabilidad multidireccional",
+        "Lesión del intervalo rotador"
+      ],
+      "cluster": "Batería de Inestabilidad Multidireccional",
+      "videos": [
+        {
+          "channel": "Physiotutors",
+          "channel_id": "physiotutors",
+          "title": "Sulcus Sign | Inferior Shoulder Instability",
+          "video_id": "7L9Y0mK_w1E",
+          "youtube_url": "https://www.youtube.com/watch?v=7L9Y0mK_w1E",
+          "embed_url": "https://www.youtube-nocookie.com/embed/7L9Y0mK_w1E"
+        }
+      ]
+    },
+    {
+      "id": "hombro-patte",
+      "name": "Test de Patte (Rotación Externa Resistida)",
+      "eponym": "Infraspinatus Test / Patte Test",
+      "region": "hombro",
+      "region_label": "Hombro y Cintura Escapular",
+      "category": "manguito",
+      "category_label": "Manguito Rotador",
+      "target_structure": "Músculos infraespinoso y redondo menor",
+      "objective": "Evaluar la fuerza e integridad del tendón infraespinoso.",
+      "patient_position": "Paciente sentado con codo a 90° pegado al tronco.",
+      "examiner_position": "Examinador frente al paciente estabilizando el codo.",
+      "procedure": [
+        "1. Codo flexionado a 90°, hombro pegado al costado.",
+        "2. Aplicar resistencia en rotación interna mientras el paciente realiza rotación externa máxima."
+      ],
+      "positive_sign": "Debilidad franca o dolor agudo que impide mantener la rotación externa.",
+      "clinical_interpretation": "Rotura o tendinopatía severa del infraespinoso.",
+      "sensitivity": "78%",
+      "specificity": "82%",
+      "sens_val": 78,
+      "spec_val": 82,
+      "lr_plus": "+4.3",
+      "lr_minus": "-0.26",
+      "exam_pearl": "La pérdida de fuerza en rotación externa con codo pegado al cuerpo es el signo más fiable de rotura posterosuperior.",
+      "clinical_tip": "Fija bien el codo al tronco para evitar que compense abduciendo el brazo.",
+      "common_errors": "Permitir que el codo se separe del tórax.",
+      "differential_dx": [
+        "Rotura del infraespinoso",
+        "Atrapamiento del nervio supraescapular"
+      ],
+      "cluster": "Clúster de Manguito Rotador Posterosuperior",
+      "videos": [
+        {
+          "channel": "Physiotutors",
+          "channel_id": "physiotutors",
+          "title": "Infraspinatus Test / External Rotation Resistance",
+          "video_id": "PzP86A3rPck",
+          "youtube_url": "https://www.youtube.com/watch?v=PzP86A3rPck",
+          "embed_url": "https://www.youtube-nocookie.com/embed/PzP86A3rPck"
+        }
+      ]
+    },
+    {
+      "id": "hombro-belly-press",
+      "name": "Belly Press Test (Napoleón)",
+      "eponym": "Signo de Napoleón / Belly-Off Sign",
+      "region": "hombro",
+      "region_label": "Hombro y Cintura Escapular",
+      "category": "manguito",
+      "category_label": "Manguito Rotador",
+      "target_structure": "Porción superior del músculo subescapular",
+      "objective": "Evaluar el tendón subescapular en pacientes con rango de movilidad limitado.",
+      "patient_position": "Paciente sentado o de pie.",
+      "examiner_position": "Examinador frente al paciente observando codo y muñeca.",
+      "procedure": [
+        "1. El paciente coloca la palma de la mano sobre el abdomen a nivel umbilical.",
+        "2. Presionar fuertemente hacia el abdomen manteniendo el codo por delante del tronco."
+      ],
+      "positive_sign": "El codo cae hacia atrás por detrás del tronco o flexiona la muñeca a 90° para compensar.",
+      "clinical_interpretation": "Rotura de la porción superior del subescapular.",
+      "sensitivity": "72%",
+      "specificity": "95%",
+      "sens_val": 72,
+      "spec_val": 95,
+      "lr_plus": "+14.4",
+      "lr_minus": "-0.29",
+      "exam_pearl": "Más tolerable que el Lift-Off en pacientes con hombro rígido o dolor agudo.",
+      "clinical_tip": "La caída posterior del codo es la clave diagnóstica.",
+      "common_errors": "No advertir la flexión compensatoria de muñeca.",
+      "differential_dx": [
+        "Rotura masiva de manguito",
+        "Lesión de nervio axilar"
+      ],
+      "cluster": "Batería de Subescapular",
+      "videos": [
+        {
+          "channel": "Physiotutors",
+          "channel_id": "physiotutors",
+          "title": "Belly Press Test | Subscapularis Tear",
+          "video_id": "j9M9JkC2m9w",
+          "youtube_url": "https://www.youtube.com/watch?v=j9M9JkC2m9w",
+          "embed_url": "https://www.youtube-nocookie.com/embed/j9M9JkC2m9w"
+        }
+      ]
+    },
+    {
+      "id": "hombro-crank",
+      "name": "Crank Test",
+      "eponym": "Prueba de la Manivela de Liu",
+      "region": "hombro",
+      "region_label": "Hombro y Cintura Escapular",
+      "category": "labrum",
+      "category_label": "Labrum y SLAP",
+      "target_structure": "Labrum glenoideo anterosuperior y superior (SLAP)",
+      "objective": "Atrapar un desgarro del labrum aplicando compresión axial y rotación pasiva.",
+      "patient_position": "Paciente en decúbito supino o sentado.",
+      "examiner_position": "Examinador en el lado afectado.",
+      "procedure": [
+        "1. Elevar el hombro a 160° en el plano escapular.",
+        "2. Aplicar una carga axial continua hacia la glena a través del húmero mientras se rota interna y externamente el brazo repetidas veces."
+      ],
+      "positive_sign": "Chasquido, clic palpable o reproducción del dolor del paciente en el interior del hombro.",
+      "clinical_interpretation": "Desgarro del labrum glenoideo (SLAP o Bankart).",
+      "sensitivity": "91%",
+      "specificity": "93%",
+      "sens_val": 91,
+      "spec_val": 93,
+      "lr_plus": "+13.0",
+      "lr_minus": "-0.10",
+      "exam_pearl": "Uno de los tests más precisos para labrum en atletas con dolor anterior de hombro.",
+      "clinical_tip": "La compresión axial constante es indispensable durante todo el giro.",
+      "common_errors": "No aplicar compresión axial suficiente.",
+      "differential_dx": [
+        "Lesión SLAP",
+        "Inestabilidad glenohumeral"
+      ],
+      "cluster": "Batería de Labrum",
+      "videos": [
+        {
+          "channel": "Physiotutors",
+          "channel_id": "physiotutors",
+          "title": "Crank Test | SLAP Tear Assessment",
+          "video_id": "8P6YqNxK9_k",
+          "youtube_url": "https://www.youtube.com/watch?v=8P6YqNxK9_k",
+          "embed_url": "https://www.youtube-nocookie.com/embed/8P6YqNxK9_k"
+        }
+      ]
+    },
+    {
+      "id": "codo-tinel-cubital",
+      "name": "Signo de Tinel del Nervio Cubital",
+      "eponym": "Tinel en Canal Epitrocleolecraniano",
+      "region": "codo",
+      "region_label": "Codo y Antebrazo",
+      "category": "neuropatia",
+      "category_label": "Neuropatía por Atrapamiento",
+      "target_structure": "Nervio cubital en el surco cubital posterior",
+      "objective": "Detectar irritabilidad mecánica del nervio cubital en el codo.",
+      "patient_position": "Paciente sentado con el codo en 45-60° de flexión.",
+      "examiner_position": "Examinador sujetando el antebrazo del paciente.",
+      "procedure": [
+        "1. Identificar el surco retroepitroclear.",
+        "2. Efectuar 4 a 6 percusiones suaves y firmes con el pulpejo sobre el trayecto del nervio cubital."
+      ],
+      "positive_sign": "Sensación de descarga eléctrica o parestesias irradiadas hacia el 4.° y 5.° dedo.",
+      "clinical_interpretation": "Síndrome del canal cubital (neuropatía cubital en el codo).",
+      "sensitivity": "62%",
+      "specificity": "96%",
+      "sens_val": 62,
+      "spec_val": 96,
+      "lr_plus": "+15.5",
+      "lr_minus": "-0.39",
+      "exam_pearl": "Alta especificidad: Una descarga distal confirma irritabilidad nerviosa. Combínalo con Elbow Flexion Test.",
+      "clinical_tip": "Diferencia el dolor local de la descarga eléctrica que viaja al meñique.",
+      "common_errors": "Golpear con fuerza excesiva provocando dolor perióstico.",
+      "differential_dx": [
+        "Radiculopatía C8-T1",
+        "Canal de Guyon",
+        "Desfiladero torácico"
+      ],
+      "cluster": "Batería de Canal Cubital",
+      "videos": [
+        {
+          "channel": "Physiotutors",
+          "channel_id": "physiotutors",
+          "title": "Tinel Sign at the Elbow | Cubital Tunnel",
+          "video_id": "m9P6Y7v1b8w",
+          "youtube_url": "https://www.youtube.com/watch?v=m9P6Y7v1b8w",
+          "embed_url": "https://www.youtube-nocookie.com/embed/m9P6Y7v1b8w"
+        }
+      ]
+    },
+    {
+      "id": "codo-elbow-flexion",
+      "name": "Elbow Flexion Test (Wadsworth)",
+      "eponym": "Prueba de Flexión Máxima de Codo",
+      "region": "codo",
+      "region_label": "Codo y Antebrazo",
+      "category": "neuropatia",
+      "category_label": "Neuropatía Cubital",
+      "target_structure": "Nervio cubital en el ligamento de Osborne",
+      "objective": "Aumentar la presión sobre el nervio cubital mediante flexión prolongada.",
+      "patient_position": "Paciente sentado o de pie.",
+      "examiner_position": "Examinador observando.",
+      "procedure": [
+        "1. El paciente mantiene el codo en flexión máxima y muñeca en extensión durante 60 segundos (hasta 3 minutos)."
+      ],
+      "positive_sign": "Aparición de parestesias o entumecimiento en el 4.° y 5.° dedo en menos de 60 segundos.",
+      "clinical_interpretation": "Síndrome del canal cubital. La combinación con Pressure Provocation alcanza hasta 97% de sensibilidad.",
+      "sensitivity": "75%",
+      "specificity": "99%",
+      "sens_val": 75,
+      "spec_val": 99,
+      "lr_plus": "+75.0",
+      "lr_minus": "-0.25",
+      "exam_pearl": "Cuanto más rápido aparecen las parestesias (<30 seg), mayor es la gravedad del atrapamiento cubital.",
+      "clinical_tip": "Añadir extensión de muñeca tensa aún más el nervio cubital.",
+      "common_errors": "Interrumpir la prueba antes de los 60 segundos.",
+      "differential_dx": [
+        "Canal de Guyon",
+        "Radiculopatía C8"
+      ],
+      "cluster": "Batería de Canal Cubital",
+      "videos": [
+        {
+          "channel": "Physiotutors",
+          "channel_id": "physiotutors",
+          "title": "Elbow Flexion Test | Cubital Tunnel Syndrome",
+          "video_id": "8P6YqNxK9_k",
+          "youtube_url": "https://www.youtube.com/watch?v=8P6YqNxK9_k",
+          "embed_url": "https://www.youtube-nocookie.com/embed/8P6YqNxK9_k"
+        }
+      ]
+    },
+    {
+      "id": "mano-phalen",
+      "name": "Test de Phalen y Reverse Phalen",
+      "eponym": "Prueba de la Flexión de Muñeca / Prayer Test",
+      "region": "muneca_mano",
+      "region_label": "Muñeca y Mano",
+      "category": "neuropatia",
+      "category_label": "Túnel Carpiano",
+      "target_structure": "Nervio mediano en el túnel carpiano",
+      "objective": "Aumentar la presión intracanalicular mediante flexión palmar máxima pasiva durante 60 segundos.",
+      "patient_position": "Paciente sentado con codos apoyados.",
+      "examiner_position": "Examinador observando.",
+      "procedure": [
+        "1. Phalen: Juntar los dorsos de las manos con muñecas en 90° de flexión durante 60 segundos.",
+        "2. Reverse Phalen: Juntar las palmas en posición de rezo con muñecas en 90° de extensión."
+      ],
+      "positive_sign": "Parestesias en los 3½ dedos radiales en menos de 60 segundos.",
+      "clinical_interpretation": "Síndrome del Túnel Carpiano.",
+      "sensitivity": "74%",
+      "specificity": "71%",
+      "sens_val": 74,
+      "spec_val": 71,
+      "lr_plus": "+2.6",
+      "lr_minus": "-0.37",
+      "exam_pearl": "Si las parestesias aparecen en <20 segundos, correlaciona con compresión moderada a severa en EMG.",
+      "clinical_tip": "El Reverse Phalen (rezo) es excelente en personas que toleran mal la flexión palmar.",
+      "common_errors": "No mantener los 90° completos de flexión.",
+      "differential_dx": [
+        "Tenosinovitis de flexores",
+        "Doble compresión C6 + STC"
+      ],
+      "cluster": "Clúster del Túnel Carpiano",
+      "videos": [
+        {
+          "channel": "Physiotutors",
+          "channel_id": "physiotutors",
+          "title": "Phalen's Test | Carpal Tunnel Syndrome",
+          "video_id": "7L9Y0mK_w1E",
+          "youtube_url": "https://www.youtube.com/watch?v=7L9Y0mK_w1E",
+          "embed_url": "https://www.youtube-nocookie.com/embed/7L9Y0mK_w1E"
+        }
+      ]
+    },
+    {
+      "id": "mano-watson",
+      "name": "Watson Test (Scaphoid Shift Test)",
+      "eponym": "Prueba de Inestabilidad Escafosemilunar",
+      "region": "muneca_mano",
+      "region_label": "Muñeca y Mano",
+      "category": "ligamentos",
+      "category_label": "Inestabilidad Carpiana",
+      "target_structure": "Ligamento escafosemilunar (ESL) y disociación DISI",
+      "objective": "Evaluar la estabilidad del ligamento escafosemilunar impidiendo la flexión del escafoides.",
+      "patient_position": "Paciente sentado con el codo apoyado en la mesa.",
+      "examiner_position": "Examinador colocando el pulgar sobre el polo distal del escafoides en cara palmar.",
+      "procedure": [
+        "1. Muñeca en desviación cubital y ligera extensión.",
+        "2. Presionar el tubérculo del escafoides firmemente desde la palma.",
+        "3. Mover pasivamente la muñeca hacia desviación radial y flexión.",
+        "4. Liberar la presión del pulgar."
+      ],
+      "positive_sign": "Subluxación dorsal dolorosa del escafoides con resalte o 'clunk' audible/palpable al liberarlo.",
+      "clinical_interpretation": "Rotura del ligamento escafosemilunar (inestabilidad DISI / SLAC wrist).",
+      "sensitivity": "69%",
+      "specificity": "80%",
+      "sens_val": 69,
+      "spec_val": 80,
+      "lr_plus": "+3.45",
+      "lr_minus": "-0.38",
+      "exam_pearl": "Confirmación radiológica: Rx en carga (puño cerrado) mostrando signo de Terry Thomas (gap >3 mm entre escafoides y semilunar).",
+      "clinical_tip": "Compara siempre bilateralmente: hasta un 20% de personas hiperlaxas tienen clunk fisiológico asintomático.",
+      "common_errors": "No presionar el punto anatómico exacto del polo distal del escafoides.",
+      "differential_dx": [
+        "Fractura oculta de escafoides",
+        "Rizartrosis CMC"
+      ],
+      "cluster": "Batería de Inestabilidad Carpiana",
+      "videos": [
+        {
+          "channel": "Physiotutors",
+          "channel_id": "physiotutors",
+          "title": "Watson Test | Scapholunate Instability",
+          "video_id": "8P6YqNxK9_k",
+          "youtube_url": "https://www.youtube.com/watch?v=8P6YqNxK9_k",
+          "embed_url": "https://www.youtube-nocookie.com/embed/8P6YqNxK9_k"
+        }
+      ]
+    },
+    {
+      "id": "mano-piano-key",
+      "name": "Piano Key Test (ARCD / TFCC)",
+      "eponym": "Signo de la Tecla de Piano",
+      "region": "muneca_mano",
+      "region_label": "Muñeca y Mano",
+      "category": "ligamentos",
+      "category_label": "Complejo Fibrocartílago Triangular",
+      "target_structure": "Articulación radiocubital distal (ARCD) y fibrocartílago triangular (TFCC)",
+      "objective": "Evaluar la estabilidad dorsopalmar de la cabeza del cúbito.",
+      "patient_position": "Paciente sentado con el antebrazo en pronación apoyado sobre la mesa.",
+      "examiner_position": "Examinador fijando el radio con una mano y presionando el cúbito con la otra.",
+      "procedure": [
+        "1. Fijar el radio distal.",
+        "2. Con el pulgar de la otra mano, presionar la cabeza del cúbito en dirección palmar hacia la mesa.",
+        "3. Soltar bruscamente y observar si rebota."
+      ],
+      "positive_sign": "Movilidad excesiva, dolor y rebote elástico de la cabeza del cúbito (como una tecla de piano).",
+      "clinical_interpretation": "Inestabilidad de la ARCD por rotura del TFCC o ligamentos radiocubitales distales.",
+      "sensitivity": "69%",
+      "specificity": "76%",
+      "sens_val": 69,
+      "spec_val": 76,
+      "lr_plus": "+2.9",
+      "lr_minus": "-0.40",
+      "exam_pearl": "Compara siempre bilateral: una asimetría franca con dolor al rebotar es el criterio patológico verdadero.",
+      "clinical_tip": "Combínalo con el Ulnar Fovea Sign y TFCC Load Test.",
+      "common_errors": "Evaluar con el antebrazo en supinación (debe ser en pronación completa).",
+      "differential_dx": [
+        "Lesión del TFCC",
+        "Artrosis ARCD",
+        "Impacto cubitocarpiano"
+      ],
+      "cluster": "Batería de Dolor Cubital de Muñeca (Piano Key + Ulnar Fovea + TFCC Load)",
+      "videos": [
+        {
+          "channel": "Physiotutors",
+          "channel_id": "physiotutors",
+          "title": "Piano Key Test | DRUJ Instability & TFCC",
+          "video_id": "7L9Y0mK_w1E",
+          "youtube_url": "https://www.youtube.com/watch?v=7L9Y0mK_w1E",
+          "embed_url": "https://www.youtube-nocookie.com/embed/7L9Y0mK_w1E"
+        }
+      ]
+    },
+    {
+      "id": "cervical-ultt1",
+      "name": "Test de Tensión Neural del Miembro Superior (ULTT 1 - Mediano)",
+      "eponym": "Upper Limb Tension Test 1 / Test de Elvey",
+      "region": "cervical",
+      "region_label": "Columna Cervical",
+      "category": "neurodinamica",
+      "category_label": "Neurodinámica Cervicobraquial",
+      "target_structure": "Nervio mediano, fascículo lateral/medial del plexo braquial y raíces C5-C6-C7",
+      "objective": "Evaluar la mecanosensibilidad y movilidad del tracto neural cervicobraquial.",
+      "patient_position": "Paciente en decúbito supino relajado.",
+      "examiner_position": "Examinador junto al lado a evaluar.",
+      "procedure": [
+        "1. Depresión pasiva de la cintura escapular.",
+        "2. Abducción glenohumeral a 90-110°.",
+        "3. Extensión de muñeca y dedos.",
+        "4. Supinación del antebrazo y rotación externa del hombro.",
+        "5. Extensión lenta del codo.",
+        "6. Diferenciación: Inclinación lateral contralateral del cuello (sensibilizador)."
+      ],
+      "positive_sign": "Reproducción de síntomas que aumentan con la inclinación cervical contralateral y ceden al acercar la cabeza.",
+      "clinical_interpretation": "Radiculopatía cervical o mecanosensibilidad neural periférica.",
+      "sensitivity": "88%",
+      "specificity": "54%",
+      "sens_val": 88,
+      "spec_val": 54,
+      "lr_plus": "+1.9",
+      "lr_minus": "-0.22",
+      "exam_pearl": "Altísima sensibilidad (hasta 97%): Es el mejor test de descarte (SnNOut) para radiculopatía cervical.",
+      "clinical_tip": "La modificación del dolor al mover el cuello confirma el origen neural.",
+      "common_errors": "No deprimir la escápula antes de extender el codo.",
+      "differential_dx": [
+        "Túnel carpiano",
+        "Tendinopatía de hombro"
+      ],
+      "cluster": "Clúster de Wainner para Radiculopatía Cervical",
+      "videos": [
+        {
+          "channel": "Physiotutors",
+          "channel_id": "physiotutors",
+          "title": "Upper Limb Tension Test 1 (ULTT1) / Elvey",
+          "video_id": "8P6YqNxK9_k",
+          "youtube_url": "https://www.youtube.com/watch?v=8P6YqNxK9_k",
+          "embed_url": "https://www.youtube-nocookie.com/embed/8P6YqNxK9_k"
+        }
+      ]
+    },
+    {
+      "id": "cervical-hoffmann",
+      "name": "Signo de Hoffmann",
+      "eponym": "Hoffmann's Reflex / Signo Piramidal",
+      "region": "cervical",
+      "region_label": "Columna Cervical",
+      "category": "mielopatia",
+      "category_label": "Mielopatía Cervical",
+      "target_structure": "Tracto corticoespinal (Signo de Primera Motoneurona)",
+      "objective": "Detectar hiperreflexia patológica por compresión medular o mielopatía espondilótica.",
+      "patient_position": "Paciente sentado con la mano relajada.",
+      "examiner_position": "Examinador sosteniendo la falange media del 3er dedo.",
+      "procedure": [
+        "1. Fijar la falange media del dedo medio.",
+        "2. Con la uña del pulgar, dar un pellizco/chasquido seco y rápido hacia abajo sobre la uña distal del paciente."
+      ],
+      "positive_sign": "Flexión refleja involuntaria del pulgar y/o del índice (aducción tipo pinza).",
+      "clinical_interpretation": "Afectación de la vía piramidal por encima de C5. Alerta de mielopatía cervical espondilótica.",
+      "sensitivity": "63%",
+      "specificity": "81%",
+      "sens_val": 63,
+      "spec_val": 81,
+      "lr_plus": "+3.3",
+      "lr_minus": "-0.45",
+      "exam_pearl": "Batería de Mielopatía: Hoffmann + Clonus + Babinski + Signo de Finger Escape. Ante un positivo asimétrico, solicita RMN cervical urgente.",
+      "clinical_tip": "La asimetría o la asociación con torpeza para abrochar botones confirma patología.",
+      "common_errors": "Evaluar con la mano tensa sin relajar.",
+      "differential_dx": [
+        "Mielopatía cervical",
+        "Esclerosis múltiple",
+        "Ictus previo"
+      ],
+      "cluster": "Clúster de Mielopatía Cervical de Cook (≥3 de 5 = LR+ 30.9)",
+      "videos": [
+        {
+          "channel": "Physiotutors",
+          "channel_id": "physiotutors",
+          "title": "Hoffmann's Sign | Upper Motor Neuron Lesion",
+          "video_id": "7L9Y0mK_w1E",
+          "youtube_url": "https://www.youtube.com/watch?v=7L9Y0mK_w1E",
+          "embed_url": "https://www.youtube-nocookie.com/embed/7L9Y0mK_w1E"
+        }
+      ]
+    },
+    {
+      "id": "lumbar-lasegue-cruzado",
+      "name": "Lasègue Cruzado (Well Leg Raise Test)",
+      "eponym": "Crossed Straight Leg Raise / Signo de Fajersztajn",
+      "region": "lumbar",
+      "region_label": "Columna Lumbar y Torácica",
+      "category": "radiculopatia",
+      "category_label": "Radiculopatía Lumbar",
+      "target_structure": "Raíz nerviosa contralateral comprometida por hernia discal medial",
+      "objective": "Tensar el saco dural desde el lado sano para traccionar la raíz contralateral comprimida.",
+      "patient_position": "Paciente en decúbito supino relajado.",
+      "examiner_position": "Examinador junto al lado asintomático.",
+      "procedure": [
+        "1. Elevar pasivamente la pierna NO AFECTADA (lado sano) con la rodilla extendida.",
+        "2. Observar si se reproduce dolor en la pierna contralateral sintomática."
+      ],
+      "positive_sign": "Dolor ciático irradiado en la pierna contralateral dolorosa al elevar la pierna sana.",
+      "clinical_interpretation": "Hernia discal medial, extruida o voluminosa con gran conflicto de espacio.",
+      "sensitivity": "28%",
+      "specificity": "94%",
+      "sens_val": 28,
+      "spec_val": 94,
+      "lr_plus": "+4.7",
+      "lr_minus": "-0.76",
+      "exam_pearl": "Especificidad del 94-100%: Si el Lasègue cruzado es positivo, la hernia discal es casi segura.",
+      "clinical_tip": "Documenta el ángulo en el que se desencadena el dolor contralateral.",
+      "common_errors": "Confundir con dolor en la pierna que se eleva.",
+      "differential_dx": [
+        "Hernia discal masiva",
+        "Secuestro discal",
+        "Tumor de cauda equina"
+      ],
+      "cluster": "Batería de Conflicto Discal Lumbar",
+      "videos": [
+        {
+          "channel": "Physiotutors",
+          "channel_id": "physiotutors",
+          "title": "Crossed Straight Leg Raise Test | Disc Herniation",
+          "video_id": "8P6YqNxK9_k",
+          "youtube_url": "https://www.youtube.com/watch?v=8P6YqNxK9_k",
+          "embed_url": "https://www.youtube-nocookie.com/embed/8P6YqNxK9_k"
+        }
+      ]
+    },
+    {
+      "id": "lumbar-kemp",
+      "name": "Test de Kemp (Quadrant Test Lumbar)",
+      "eponym": "Kemp's Test / Cuadrantes Lumbares",
+      "region": "lumbar",
+      "region_label": "Columna Lumbar y Torácica",
+      "category": "facetas",
+      "category_label": "Articulaciones Facetarias",
+      "target_structure": "Articulaciones facetarias y foramen intervertebral lumbar",
+      "objective": "Cargar el compartimento posterior y facetario mediante extensión, rotación e inclinación.",
+      "patient_position": "Paciente de pie o sentado con brazos cruzados.",
+      "examiner_position": "Examinador detrás del paciente estabilizando la pelvis.",
+      "procedure": [
+        "1. Estabilizar la pelvis en la cresta ilíaca.",
+        "2. Guiar al paciente hacia extensión lumbar, inclinación lateral y rotación hacia el lado doloroso.",
+        "3. Aplicar una ligera compresión axial hacia abajo."
+      ],
+      "positive_sign": "Positivo Facetario: Dolor local lumbar paravertebral sin bajar de la rodilla. Positivo Foraminal: Dolor radicular irradiado por la pierna.",
+      "clinical_interpretation": "Síndrome facetario lumbar o estenosis foraminal.",
+      "sensitivity": "60%",
+      "specificity": "78%",
+      "sens_val": 60,
+      "spec_val": 78,
+      "lr_plus": "+2.7",
+      "lr_minus": "-0.51",
+      "exam_pearl": "Si el dolor se queda local en la espalda baja = Facetario. Si se dispara por la pierna = Radicular foraminal.",
+      "clinical_tip": "Selecciona pacientes candidatos a bloqueo diagnóstico del ramo medial lumbar.",
+      "common_errors": "No fijar la pelvis permitiendo rotación de cadera.",
+      "differential_dx": [
+        "Síndrome facetario",
+        "Estenosis foraminal",
+        "Disfunción sacroilíaca"
+      ],
+      "cluster": "Batería Facetaria Lumbar",
+      "videos": [
+        {
+          "channel": "Physiotutors",
+          "channel_id": "physiotutors",
+          "title": "Kemp's Test / Quadrant Test | Facet Joint",
+          "video_id": "p67T5xJ7JbM",
+          "youtube_url": "https://www.youtube.com/watch?v=p67T5xJ7JbM",
+          "embed_url": "https://www.youtube-nocookie.com/embed/p67T5xJ7JbM"
+        }
+      ]
+    },
+    {
+      "id": "si-fair-test",
+      "name": "FAIR Test (Síndrome del Piriforme)",
+      "eponym": "Flexión-Aducción-Rotación Interna",
+      "region": "sacroiliaca",
+      "region_label": "Pelvis y Art. Sacroilíaca",
+      "category": "piriforme",
+      "category_label": "Síndrome del Piriforme",
+      "target_structure": "Músculo piriforme y nervio ciático en espacio infrapiriforme",
+      "objective": "Estirar al máximo el piriforme y comprimir el nervio ciático.",
+      "patient_position": "Paciente en decúbito lateral con lado afecto arriba.",
+      "examiner_position": "Examinador detrás del paciente estabilizando la pelvis.",
+      "procedure": [
+        "1. Cadera afectada a 60° de flexión y rodilla a 60-90°.",
+        "2. Estabilizar la pelvis y empujar la rodilla hacia abajo (aducción + rotación interna).",
+        "3. Mantener la tensión durante 30 a 60 segundos."
+      ],
+      "positive_sign": "Dolor glúteo profundo con o sin parestesias ciáticas hacia el muslo posterior.",
+      "clinical_interpretation": "Síndrome del piriforme / Atrapamiento ciático subglúteo.",
+      "sensitivity": "88%",
+      "specificity": "83%",
+      "sens_val": 88,
+      "spec_val": 83,
+      "lr_plus": "+5.2",
+      "lr_minus": "-0.14",
+      "exam_pearl": "A más de 60° de flexión de cadera, el piriforme se convierte en rotador interno: por eso esta maniobra genera su máxima elongación.",
+      "clinical_tip": "Diagnóstico de exclusión: descarta siempre hernia discal L5-S1 antes de concluir piriforme.",
+      "common_errors": "Flexionar a 90° en vez de 60°; no mantener los 30 segundos requeridos.",
+      "differential_dx": [
+        "Radiculopatía L5-S1",
+        "Disfunción sacroilíaca",
+        "Bursitis trocantérea"
+      ],
+      "cluster": "Batería de Dolor Glúteo Profundo (FAIR + Beatty + Pace)",
+      "videos": [
+        {
+          "channel": "Physiotutors",
+          "channel_id": "physiotutors",
+          "title": "FAIR Test | Piriformis Syndrome Assessment",
+          "video_id": "8P6YqNxK9_k",
+          "youtube_url": "https://www.youtube.com/watch?v=8P6YqNxK9_k",
+          "embed_url": "https://www.youtube-nocookie.com/embed/8P6YqNxK9_k"
+        }
+      ]
+    },
+    {
+      "id": "cadera-trendelenburg",
+      "name": "Test de Trendelenburg",
+      "eponym": "Trendelenburg Sign / Abductores de Cadera",
+      "region": "cadera",
+      "region_label": "Cadera y Coxofemoral",
+      "category": "muscular",
+      "category_label": "Estabilidad Pélvica y Abductores",
+      "target_structure": "Glúteo medio y glúteo menor (nervio glúteo superior L4-S1)",
+      "objective": "Evaluar la capacidad del glúteo medio para mantener la pelvis nivelada en carga monopodal.",
+      "patient_position": "Paciente de pie frente a una pared o examinador.",
+      "examiner_position": "Examinador detrás observando crestas ilíacas y pliegues glúteos.",
+      "procedure": [
+        "1. Pedir al paciente que levante una pierna del suelo y se mantenga en apoyo monopodal 30 segundos sobre la otra pierna."
+      ],
+      "positive_sign": "La pelvis del lado de la pierna en el aire desciende (cae la hemipelvis contralateral).",
+      "clinical_interpretation": "Debilidad del glúteo medio ipsilateral al apoyo.",
+      "sensitivity": "74%",
+      "specificity": "78%",
+      "sens_val": 74,
+      "spec_val": 78,
+      "lr_plus": "+3.36",
+      "lr_minus": "-0.33",
+      "exam_pearl": "'El lado débil es el que está en el suelo'. Si el paciente inclina el tronco hacia el lado de apoyo para compensar, se denomina 'Signo de Duchenne'.",
+      "clinical_tip": "Permite apoyar la punta de un dedo en tu mano solo para equilibrio.",
+      "common_errors": "Confundir el lado patológico; no detectar la compensación lateral (Duchenne).",
+      "differential_dx": [
+        "Tendinopatía de glúteo medio",
+        "Coxartrosis",
+        "Radiculopatía L5"
+      ],
+      "cluster": "Batería de Dolor Trocantérico",
+      "videos": [
+        {
+          "channel": "Physiotutors",
+          "channel_id": "physiotutors",
+          "title": "Trendelenburg Test | Hip Abductor Weakness",
+          "video_id": "7L9Y0mK_w1E",
+          "youtube_url": "https://www.youtube.com/watch?v=7L9Y0mK_w1E",
+          "embed_url": "https://www.youtube-nocookie.com/embed/7L9Y0mK_w1E"
+        }
+      ]
+    },
+    {
+      "id": "rodilla-pivot-shift",
+      "name": "Pivot Shift Test",
+      "eponym": "Prueba de Desplazamiento del Pivote de Galway",
+      "region": "rodilla",
+      "region_label": "Rodilla",
+      "category": "ligamentos",
+      "category_label": "Ligamento Cruzado Anterior (LCA)",
+      "target_structure": "LCA y complejo anterolateral de la rodilla",
+      "objective": "Reproducir la subluxación y reducción brusca del platillo tibial lateral.",
+      "patient_position": "Paciente en decúbito supino con pierna relajada.",
+      "examiner_position": "Examinador sujetando el pie y la cara lateral de la rodilla.",
+      "procedure": [
+        "1. Rodilla en extensión completa con rotación interna de tibia y fuerza en valgo.",
+        "2. Flexionar lentamente la rodilla manteniendo valgo y rotación interna.",
+        "3. A los 30-40° de flexión se observa la reducción brusca."
+      ],
+      "positive_sign": "Resalte o salto brusco ('clunk') entre 30° y 40° de flexión al reducirse la subluxación.",
+      "clinical_interpretation": "Inestabilidad rotatoria anterolateral por rotura completa del LCA.",
+      "sensitivity": "45%",
+      "specificity": "99%",
+      "sens_val": 45,
+      "spec_val": 99,
+      "lr_plus": "+45.0",
+      "lr_minus": "-0.56",
+      "exam_pearl": "Es la prueba más específica de rotura del LCA y la que mejor correlaciona con la inestabilidad funcional deportiva.",
+      "clinical_tip": "En la consulta con el paciente despierto, el dolor suele frenar el test. Realiza primero Lachman y Lever Sign.",
+      "common_errors": "No aplicar fuerza en valgo suficiente.",
+      "differential_dx": [
+        "Ruptura del LCA",
+        "Lesión del ligamento anterolateral (ALL)"
+      ],
+      "cluster": "Tríada de Inestabilidad del LCA",
+      "videos": [
+        {
+          "channel": "Educom Continuing Education™",
+          "channel_id": "educom",
+          "title": "Lateral Pivot Shift Test | Knee Examination",
+          "video_id": "8p-Y0k49VYc",
+          "youtube_url": "https://youtu.be/8p-Y0k49VYc",
+          "embed_url": "https://www.youtube-nocookie.com/embed/8p-Y0k49VYc"
+        },
+        {
+          "channel": "Physiotutors",
+          "channel_id": "physiotutors",
+          "title": "Pivot Shift Test | ACL Rupture",
+          "video_id": "7L9Y0mK_w1E",
+          "youtube_url": "https://www.youtube.com/watch?v=7L9Y0mK_w1E",
+          "embed_url": "https://www.youtube-nocookie.com/embed/7L9Y0mK_w1E"
+        }
+      ]
+    },
+    {
+      "id": "rodilla-thessaly",
+      "name": "Test de Thessaly (a 5° y 20°)",
+      "eponym": "Thessaly Meniscal Test",
+      "region": "rodilla",
+      "region_label": "Rodilla",
+      "category": "meniscos",
+      "category_label": "Meniscos y Cartílago",
+      "target_structure": "Meniscos bajo compresión axial en carga",
+      "objective": "Simular las fuerzas de carga y torsión de la marcha sobre los meniscos.",
+      "patient_position": "Paciente en apoyo monopodal sobre la pierna evaluada.",
+      "examiner_position": "Examinador frente al paciente sujetando sus manos para equilibrio.",
+      "procedure": [
+        "1. Flexionar rodilla a 5° y rotar el cuerpo 3 veces a cada lado.",
+        "2. Repetir flexionando la rodilla a 20° y rotando 3 veces a cada lado."
+      ],
+      "positive_sign": "Dolor punzante en la interlínea articular o sensación de bloqueo/enganche.",
+      "clinical_interpretation": "Desgarro meniscal. La prueba a 20° es más sensible.",
+      "sensitivity": "90%",
+      "specificity": "96%",
+      "sens_val": 90,
+      "spec_val": 96,
+      "lr_plus": "+22.5",
+      "lr_minus": "-0.10",
+      "exam_pearl": "Thessaly a 20° tiene la mayor precisión diagnóstica global (>90%) para desgarros meniscales.",
+      "clinical_tip": "No realizar si hay derrame a tensión o sospecha de fractura.",
+      "common_errors": "Permitir que el pie resbale en el suelo.",
+      "differential_dx": [
+        "Desgarro meniscal",
+        "Lesión osteocondral"
+      ],
+      "cluster": "Clúster Meniscal",
+      "videos": [
+        {
+          "channel": "Physiotutors",
+          "channel_id": "physiotutors",
+          "title": "Thessaly Test | Meniscal Tear Assessment",
+          "video_id": "7L9Y0mK_w1E",
+          "youtube_url": "https://www.youtube.com/watch?v=7L9Y0mK_w1E",
+          "embed_url": "https://www.youtube-nocookie.com/embed/7L9Y0mK_w1E"
+        }
+      ]
+    }
+  ],
+  "algorithms": [
+    {
+      "id": "algo-hombro",
+      "title": "Algoritmo: Dolor Anterior de Hombro",
+      "region": "hombro",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Descartar Banderas Rojas",
+          "detail": "Dolor referido cardíaco (diaforesis, disnea en >50 años), Tumor de Pancoast (síndrome de Horner, masa apical), Artritis séptica (fiebre, calor local)."
+        },
+        {
+          "step": 2,
+          "action": "Test de Hawkins-Kennedy y Neer",
+          "detail": "Si positivos con arco doloroso 60-120° → Pinzamiento Subacromial / Manguito Rotador. Realizar Test de Jobe y Patte."
+        },
+        {
+          "step": 3,
+          "action": "Test de Speed y Yergason",
+          "detail": "Si dolor selectivo en corredera anterior → Tendinopatía de Porción Larga del Bíceps."
+        },
+        {
+          "step": 4,
+          "action": "Test de O'Brien y Crank",
+          "detail": "Si dolor profundo que cede en supinación → Lesión Labral / SLAP."
+        },
+        {
+          "step": 5,
+          "action": "Aprensión y Relocalización",
+          "detail": "Si sensación de que el hombro se sale → Inestabilidad Glenohumeral Anterior (Bankart)."
+        }
+      ]
+    },
+    {
+      "id": "algo-lumbar",
+      "title": "Algoritmo: Dolor Lumbar y Ciatalgia",
+      "region": "lumbar",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Descartar Síndrome de Cauda Equina",
+          "detail": "Anestesia en silla de montar, retención o incontinencia urinaria/fecal, debilidad bilateral progresiva → ¡URGENCIA QUIRÚRGICA INMEDIATA!"
+        },
+        {
+          "step": 2,
+          "action": "Batería de Tensión Neural (Lasègue + Slump)",
+          "detail": "Si positivos con dolor bajo la rodilla → Radiculopatía Lumbar (L4-L5-S1). Evaluar Lasègue Cruzado."
+        },
+        {
+          "step": 3,
+          "action": "Test de Kemp y Cierre Facetario",
+          "detail": "Si dolor puramente lumbar paravertebral al extender y rotar → Síndrome Facetario Lumbar."
+        },
+        {
+          "step": 4,
+          "action": "Clúster de Laslett (Thigh Thrust, Distraction, etc.)",
+          "detail": "Si dolor en glúteo bajo L5 con ≥3 pruebas positivas → Disfunción de Articulación Sacroilíaca."
+        },
+        {
+          "step": 5,
+          "action": "Test FAIR y Palpación Glútea",
+          "detail": "Si Lasègue negativo pero dolor ciático al cruzar pierna a 60° → Síndrome del Piriforme."
+        }
+      ]
+    },
+    {
+      "id": "algo-rodilla",
+      "title": "Algoritmo: Rodilla Traumática Aguda",
+      "region": "rodilla",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Inspección de Hemartrosis y 'Pop'",
+          "detail": "70% de hemartrosis a tensión tras giro deportivo corresponden a Ruptura de LCA."
+        },
+        {
+          "step": 2,
+          "action": "Test de Lachman y Lever Sign",
+          "detail": "Si traslación aumentada y tope blando → Lesión del LCA. Realizar Pivot Shift."
+        },
+        {
+          "step": 3,
+          "action": "Sag Sign y Cajón Posterior",
+          "detail": "Si caída posterior de la tibia por gravedad → Lesión del LCP."
+        },
+        {
+          "step": 4,
+          "action": "Estrés en Valgo y Varo a 30° y 0°",
+          "detail": "Apertura medial a 30° = LCM aislado; apertura a 0° = Lesión multiligamentaria."
+        },
+        {
+          "step": 5,
+          "action": "Test de McMurray y Thessaly a 20°",
+          "detail": "Si bloqueo articular mecánico o clic con dolor en interlínea → Desgarro Meniscal."
+        }
+      ]
+    }
+  ],
+  "clinical_cases": [
+    {
+      "id": "case-1",
+      "title": "Caso 1: Lanzador de Béisbol con Dolor Anterior",
+      "region": "hombro",
+      "patient": "Varón, 24 años, lanzador. Refiere dolor anterior de hombro derecho de 4 meses que empeora en la fase de armado tardío del lanzamiento.",
+      "findings": [
+        {
+          "test": "Test de Aprensión",
+          "result": "Negativo (sin sensación de inestabilidad)"
+        },
+        {
+          "test": "Test de O'Brien",
+          "result": "Positivo (dolor profundo en pronación, alivia en supinación)"
+        },
+        {
+          "test": "Crank Test",
+          "result": "Positivo con clic palpable"
+        },
+        {
+          "test": "Speed Test",
+          "result": "Positivo moderado en corredera"
+        }
+      ],
+      "question": "¿Cuál es el diagnóstico más probable?",
+      "options": [
+        "Pinzamiento subacromial aislado",
+        "Lesión del Labrum Superior (SLAP tipo II) con tendinopatía asociada de la PLB",
+        "Rotura completa del tendón subescapular",
+        "Inestabilidad glenohumeral multidireccional"
+      ],
+      "correct_index": 1,
+      "explanation": "El dolor profundo en el O'Brien que se alivia con la supinación, junto al clic articular en el Crank Test en un atleta lanzador, es diagnóstico típico de una lesión SLAP (Superior Labrum Anterior to Posterior), frecuentemente acompañada de sobrecarga de la porción larga del bíceps."
+    },
+    {
+      "id": "case-2",
+      "title": "Caso 2: Mujer con Dolor Glúteo y Ciatalgia sin Lumbalgia",
+      "region": "sacroiliaca",
+      "patient": "Mujer de 38 años, corredora amateur. Consulta por dolor glúteo profundo derecho que irradia hacia la cara posterior del muslo hasta la corva. Empeora al permanecer sentada más de 30 minutos. No tiene dolor lumbar previo.",
+      "findings": [
+        {
+          "test": "Test de Lasègue",
+          "result": "Negativo (sin dolor hasta 80°)"
+        },
+        {
+          "test": "Test FAIR",
+          "result": "Positivo franco (reproduce dolor glúteo y corrientazo)"
+        },
+        {
+          "test": "Clúster de Laslett",
+          "result": "Solo 1 de 5 positiva (Thigh Thrust negativo)"
+        },
+        {
+          "test": "RMN Lumbar",
+          "result": "Discos lumbares normales sin hernia discal"
+        }
+      ],
+      "question": "¿Cuál es el diagnóstico clínico y conducta inicial?",
+      "options": [
+        "Hernia discal foraminal L4-L5",
+        "Síndrome del Piriforme con atrapamiento del nervio ciático en espacio subglúteo",
+        "Sacroileítis inflamatoria activa",
+        "Coxartrosis rápidamente progresiva"
+      ],
+      "correct_index": 1,
+      "explanation": "El patrón de dolor glúteo con irritación ciática en ausencia de dolor lumbar, con Lasègue negativo, RMN lumbar normal y prueba FAIR positiva a 60° de flexión en decúbito lateral confirma el síndrome del piriforme."
+    },
+    {
+      "id": "case-3",
+      "title": "Caso 3: Futbolista con Giro Brusco y 'Pop' en la Rodilla",
+      "region": "rodilla",
+      "patient": "Varón de 21 años. Al apoyar el pie y girar el cuerpo en un regate de fútbol, escuchó un chasquido ('pop') y la rodilla se le hinchó rápidamente a las pocas horas.",
+      "findings": [
+        {
+          "test": "Test de Lachman",
+          "result": "Grado II positivo con traslación aumentada y tope blando"
+        },
+        {
+          "test": "Lever Sign (Lelli)",
+          "result": "Positivo (el talón no se despega de la camilla)"
+        },
+        {
+          "test": "Pivot Shift",
+          "result": "Positivo con resalte franco"
+        },
+        {
+          "test": "Test de McMurray",
+          "result": "Dudoso por derrame a tensión"
+        }
+      ],
+      "question": "¿Qué lesión presenta el paciente?",
+      "options": [
+        "Esguince aislado de ligamento colateral medial",
+        "Ruptura completa del Ligamento Cruzado Anterior (LCA)",
+        "Quiste de Baker roto",
+        "Tendinitis rotuliana aguda"
+      ],
+      "correct_index": 1,
+      "explanation": "El antecedente de giro en pivote con 'pop' audible, hemartrosis rápida y la tríada de Lachman + Lever Sign + Pivot Shift positivos es patognomónica de rotura completa del LCA con más del 98% de certeza diagnóstica."
+    }
+  ]
+}
