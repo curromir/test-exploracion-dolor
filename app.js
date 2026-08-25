@@ -16,7 +16,7 @@ const state = {
   favorites: JSON.parse(localStorage.getItem('dolor_favs') || '[]'),
   completed: JSON.parse(localStorage.getItem('dolor_completed') || '[]'),
   currentVideoTest: null,
-  theme: localStorage.getItem('dolor_theme') || 'dark',
+  theme: localStorage.getItem('dolor_theme') || 'light',
   quizScore: { correct: 0, total: 0 }
 };
 
