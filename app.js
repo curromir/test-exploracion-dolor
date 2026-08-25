@@ -16,7 +16,7 @@ const state = {
   favorites: JSON.parse(localStorage.getItem('dolor_favs') || '[]'),
   completed: JSON.parse(localStorage.getItem('dolor_completed') || '[]'),
   currentVideoTest: null,
-  theme: localStorage.getItem('dolor_theme') || 'light',
+  theme: (localStorage.getItem('dolor_theme') === 'dark') ? 'dark' : 'light',
   quizScore: { correct: 0, total: 0 }
 };
 
@@ -923,9 +923,11 @@ function updateHeaderMeta() {
   DOM.activeFilterCount.textContent = `Mostrando ${state.filtered.length} prueba${state.filtered.length === 1 ? '' : 's'}`;
 }
 
-// Theme Engine (Dark / Light)
+// Theme Engine (Light Default / Dark Optional)
 function initTheme() {
-  document.body.className = state.theme === 'light' ? 'light-theme' : 'dark-theme';
+  const saved = localStorage.getItem('dolor_theme');
+  state.theme = (saved === 'dark') ? 'dark' : 'light';
+  document.body.className = state.theme === 'dark' ? 'dark-theme' : 'light-theme';
   updateThemeButton();
 }
 
