@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 // Load Database
 async function loadCatalog() {
   try {
-    const res = await fetch('data/tests_catalog.json');
+    const res = await fetch('data/tests_catalog.json?v=6.0');
     if (!res.ok) throw new Error('Error al cargar tests_catalog.json');
     state.catalog = await res.json();
     state.tests = state.catalog.tests || [];
