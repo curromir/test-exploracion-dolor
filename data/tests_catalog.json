@@ -2413,6 +2413,114 @@
         "what_to_do": "Fisioterapia con carga isométrica progresiva de abductores + ecografía para valorar tendinosis vs rotura + infiltración ecoguiada peritendinosa/bursal si dolor nocturno refractario.",
         "what_not_to_do": "No solicitar prótesis de cadera sin comprobar que la articulación coxofemoral está sana; no infiltrar corticoides directamente intratendón."
       }
+    },
+    {
+      "id": "manual-case-6",
+      "source": "manual_pdf",
+      "category": "rodilla",
+      "title": "Caso M8: Lesión Ligamentaria del LCA de Rodilla",
+      "patient": "Varón de 22 años. Al girar en pivote en fútbol sintió un chasquido ('pop') y la rodilla se hinchó a las 2 horas por hemartrosis.",
+      "findings": [
+        {
+          "test": "Test de Lachman",
+          "result": "Positivo Grado II con traslación tibial aumentada y tope blando"
+        },
+        {
+          "test": "Pivot Shift Test",
+          "result": "Positivo con resalte brusco a 30-40° de flexión"
+        },
+        {
+          "test": "Lever Sign (Lelli)",
+          "result": "Positivo (el talón no se despega de la mesa al presionar el muslo)"
+        }
+      ],
+      "question": "¿Qué tríada de pruebas confirma la rotura completa del LCA?",
+      "options": [
+        "McMurray + Apley + Thessaly",
+        "Lachman + Pivot Shift + Lever Sign (Lelli)",
+        "Cajón posterior + Sag Sign + Dial test",
+        "Valgo a 0° + Varo a 0° + Clarke"
+      ],
+      "correct_index": 1,
+      "explanation": "La combinación de Lachman (alta sensibilidad), Pivot Shift (alta especificidad) y Lever Sign (Lelli) confirma la rotura del LCA con más del 98% de certeza.",
+      "expert_thinking": {
+        "alicia": "Traumatismo con giro, pop y hemartrosis rápida.",
+        "abcde": "A: Ligamento cruzado anterior | B: Rotura ligamentaria aguda.",
+        "what_to_do": "Punción evacuadora si derrame a tensión + RMN de rodilla + valoración quirúrgica.",
+        "what_not_to_do": "No ignorar la hemartrosis aguda (70% son roturas de LCA)."
+      }
+    },
+    {
+      "id": "manual-case-7",
+      "source": "manual_pdf",
+      "category": "cervical",
+      "title": "Caso M16: Radiculopatía Cervical C6 frente a Hombro Doloroso",
+      "patient": "Varón de 48 años. Dolor en cuello y hombro derecho que baja por la cara anterolateral del brazo hasta el pulgar con corrientazos eléctricos. Alivia al poner la mano sobre la cabeza (Bakody).",
+      "findings": [
+        {
+          "test": "Test de Spurling",
+          "result": "Positivo franco con dolor hacia el pulgar"
+        },
+        {
+          "test": "Test de Distracción Cervical",
+          "result": "Positivo (alivia el dolor radicular)"
+        },
+        {
+          "test": "Maniobras de Hombro (Hawkins, Jobe)",
+          "result": "Negativas con hombro libre"
+        }
+      ],
+      "question": "¿Qué raíz y nivel vertebral están involucrados?",
+      "options": [
+        "Raíz C5 (deltoides)",
+        "Raíz C6 (disco C5-C6, territorio del pulgar e índice)",
+        "Raíz C8 (meñique)",
+        "Nervio axilar"
+      ],
+      "correct_index": 1,
+      "explanation": "El dermatoma de C6 abarca la cara lateral de antebrazo, pulgar e índice; la maniobra de Spurling y Bakody son típicas.",
+      "expert_thinking": {
+        "alicia": "Dolor cervicobraquial neuropático hacia 1º y 2º dedo.",
+        "abcde": "A: Raíz C6 | B: Dolor neuropático radicular.",
+        "what_to_do": "Neuromoduladores + tracción/rehabilitación + considerar TFESI cervical.",
+        "what_not_to_do": "No infiltrar la bursa del hombro si la patología es cervical."
+      }
+    },
+    {
+      "id": "manual-case-8",
+      "source": "manual_pdf",
+      "category": "sacroiliaca",
+      "title": "Caso M15: Dolor Sacroilíaco frente a Cadera y Faceta Lumbar",
+      "patient": "Mujer de 42 años. Dolor en nalga derecha bajo la EIPS (zona de Fortin) que empeora con cambios de postura y zancadas largas.",
+      "findings": [
+        {
+          "test": "Thigh Thrust Test",
+          "result": "Positivo franco en nalga"
+        },
+        {
+          "test": "Distraction Test y Sacral Thrust",
+          "result": "Positivos (3/5 pruebas de Laslett positivas)"
+        },
+        {
+          "test": "Test de Lasègue y Kemp",
+          "result": "Negativos"
+        }
+      ],
+      "question": "¿Qué diagnóstico confirma el Clúster de Laslett?",
+      "options": [
+        "Coxartrosis",
+        "Disfunción de la articulación sacroilíaca (>90% probabilidad post-test)",
+        "Hernia discal L5-S1",
+        "Tendinitis de psoas"
+      ],
+      "correct_index": 1,
+      "explanation": "El Clúster de Laslett con ≥3 pruebas positivas confirma el dolor sacroilíaco.",
+      "expert_thinking": {
+        "alicia": "Dolor en zona de Fortin (bajo EIPS) sin dolor bajo rodilla.",
+        "abcde": "A: Articulación sacroilíaca | B: Nociceptivo articular.",
+        "what_to_do": "Bloqueo sacroilíaco guiado + ejercicios de estabilización lumbo-pélvica.",
+        "what_not_to_do": "No infiltrar facetas ni operar la columna lumbar sin motivo."
+      }
     }
   ],
   "notion_guide": [
