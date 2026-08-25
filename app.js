@@ -7,6 +7,9 @@
 // Application State
 const state = {
   catalog: null,
+  quizScore: 0,
+  quizTotal: 0,
+  answeredCases: {},
   tests: [],
   filtered: [],
   currentTab: 'tab-tests',
@@ -71,7 +74,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 // Load Database
 async function loadCatalog() {
   try {
-    const res = await fetch('data/tests_catalog.json?v=8.0');
+    const res = await fetch('data/tests_catalog.json?v=9.0');
     if (!res.ok) throw new Error('Error al cargar tests_catalog.json');
     state.catalog = await res.json();
     state.tests = state.catalog.tests || [];
@@ -622,6 +625,57 @@ function renderNotionGuide() {
   `).join('');
 }
 
+
+// Interactive Case Answering Logic
+window.answerCaseQuestion = function(caseId, selectedIdx) {
+  if (!state.catalog || !state.catalog.clinical_cases) return;
+  if (state.answeredCases && state.answeredCases[caseId] !== undefined) return; // already answered
+
+  const caseObj = state.catalog.clinical_cases.find(c => c.id === caseId);
+  if (!caseObj) return;
+
+  const correctIdx = caseObj.correct_index;
+  const isCorrect = (selectedIdx === correctIdx);
+
+  if (!state.answeredCases) state.answeredCases = {};
+  state.answeredCases[caseId] = { selected: selectedIdx, isCorrect: isCorrect };
+
+  state.quizTotal = (state.quizTotal || 0) + 1;
+  if (isCorrect) {
+    state.quizScore = (state.quizScore || 0) + 1;
+  }
+
+  // Update Score Badge
+  if (DOM.quizScoreDisplay) {
+    DOM.quizScoreDisplay.textContent = `${state.quizScore}/${state.quizTotal}`;
+  }
+
+  // Update Buttons in DOM
+  const caseCard = document.getElementById(`case-${caseId}`);
+  if (caseCard) {
+    const btns = caseCard.querySelectorAll('.case-option-btn');
+    btns.forEach((btn, idx) => {
+      btn.disabled = true;
+      btn.style.cursor = 'default';
+      if (idx === correctIdx) {
+        btn.classList.add('correct');
+        btn.innerHTML = `✅ ${btn.textContent.trim()}`;
+      } else if (idx === selectedIdx && !isCorrect) {
+        btn.classList.add('incorrect');
+        btn.innerHTML = `❌ ${btn.textContent.trim()}`;
+      }
+    });
+
+    // Reveal Feedback Box
+    const feedbackBox = document.getElementById(`feedback-${caseId}`);
+    if (feedbackBox) {
+      feedbackBox.style.display = 'block';
+      feedbackBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  }
+};
+
+
 // Render Clinical Cases / Quiz (Notion ALICIA-ABCDE & Expert Manual)
 let currentCaseFilter = 'all';
 
@@ -637,77 +691,99 @@ function renderCases() {
     }
   }
 
-  DOM.casesContainer.innerHTML = casesList.map((c, cIdx) => `
-    <div class="case-card glass-panel" id="case-${c.id}">
-      <div class="case-header">
-        <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
-          <span class="case-source-badge ${c.source}">
-            ${c.source === 'notion' ? '🧠 Notion ALICIA-ABCDE' : '📚 Manual Pensamiento Experto'}
-          </span>
-          <span class="category-tag">${c.category.toUpperCase()}</span>
+  DOM.casesContainer.innerHTML = casesList.map((c, cIdx) => {
+    const answered = state.answeredCases && state.answeredCases[c.id];
+    const isAnswered = !!answered;
+    const selectedIdx = isAnswered ? answered.selected : null;
+    const isCorrect = isAnswered ? answered.isCorrect : false;
+
+    return `
+      <div class="case-card glass-panel" id="case-${c.id}">
+        <div class="case-header">
+          <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+            <span class="case-source-badge ${c.source}">
+              ${c.source === 'notion' ? '🧠 Notion ALICIA-ABCDE' : '📚 Manual Pensamiento Experto'}
+            </span>
+            <span class="category-tag">${c.category.toUpperCase()}</span>
+          </div>
+          <h3 class="case-title" style="margin-top: 0.35rem;">${c.title}</h3>
         </div>
-        <h3 class="case-title" style="margin-top: 0.35rem;">${c.title}</h3>
-      </div>
 
-      <div class="case-patient-box">
-        <strong>📋 Presentación del Paciente:</strong>
-        <p style="margin-top: 0.25rem;">${c.patient}</p>
-      </div>
+        <div class="case-patient-box">
+          <strong>📋 Presentación del Paciente:</strong>
+          <p style="margin-top: 0.25rem;">${c.patient}</p>
+        </div>
 
-      <div class="case-findings-list">
-        ${c.findings.map(f => `
-          <div class="finding-pill">
-            <strong>${f.test}:</strong> ${f.result}
-          </div>
-        `).join('')}
-      </div>
-
-      <div class="case-question-title">❓ ${c.question}</div>
-
-      <div class="case-options" data-case-id="${c.id}" data-correct="${c.correct_index}">
-        ${c.options.map((opt, oIdx) => `
-          <button class="case-option-btn" data-opt-idx="${oIdx}" onclick="answerCaseQuestion('${c.id}', ${oIdx})">
-            ${opt}
-          </button>
-        `).join('')}
-      </div>
-
-      <div class="case-feedback" id="feedback-${c.id}">
-        <strong>💡 Razonamiento Diagnóstico:</strong>
-        <p style="margin-top: 0.25rem;">${c.explanation}</p>
-
-        ${c.expert_thinking ? `
-          <div class="expert-breakdown-box">
-            <div class="expert-box-title">
-              <span>🧠</span> <span>Estructura Mental del Experto en Consulta</span>
+        <div class="case-findings-list">
+          ${c.findings.map(f => `
+            <div class="finding-pill">
+              <strong>${f.test}:</strong> ${f.result}
             </div>
+          `).join('')}
+        </div>
 
-            <div class="expert-grid-2">
-              <div class="expert-subcard">
-                <h5 style="color: var(--accent-blue);">📋 Fenotipo ALICIA</h5>
-                <p>${c.expert_thinking.alicia}</p>
+        <div class="case-question-title">❓ ${c.question}</div>
+
+        <div class="case-options" data-case-id="${c.id}" data-correct="${c.correct_index}">
+          ${c.options.map((opt, oIdx) => {
+            let extraClass = '';
+            let label = opt;
+            let disabledAttr = '';
+            if (isAnswered) {
+              disabledAttr = 'disabled style="cursor: default;"';
+              if (oIdx === c.correct_index) {
+                extraClass = 'correct';
+                label = `✅ ${opt}`;
+              } else if (oIdx === selectedIdx && !isCorrect) {
+                extraClass = 'incorrect';
+                label = `❌ ${opt}`;
+              }
+            }
+            return `
+              <button class="case-option-btn ${extraClass}" data-opt-idx="${oIdx}" ${disabledAttr} onclick="window.answerCaseQuestion('${c.id}', ${oIdx})">
+                ${label}
+              </button>
+            `;
+          }).join('')}
+        </div>
+
+        <div class="case-feedback" id="feedback-${c.id}" style="${isAnswered ? 'display: block;' : 'display: none;'}">
+          <strong>💡 Razonamiento Diagnóstico:</strong>
+          <p style="margin-top: 0.25rem;">${c.explanation}</p>
+
+          ${c.expert_thinking ? `
+            <div class="expert-breakdown-box">
+              <div class="expert-box-title">
+                <span>🧠</span> <span>Estructura Mental del Experto en Consulta</span>
               </div>
-              <div class="expert-subcard">
-                <h5 style="color: #7c3aed;">🎯 Modelo ABCDE</h5>
-                <p>${c.expert_thinking.abcde}</p>
+
+              <div class="expert-grid-2">
+                <div class="expert-subcard">
+                  <h5 style="color: var(--accent-blue);">📋 Fenotipo ALICIA</h5>
+                  <p>${c.expert_thinking.alicia}</p>
+                </div>
+                <div class="expert-subcard">
+                  <h5 style="color: #7c3aed;">🎯 Modelo ABCDE</h5>
+                  <p>${c.expert_thinking.abcde}</p>
+                </div>
+              </div>
+
+              <div class="expert-grid-2">
+                <div class="expert-subcard expert-what-todo">
+                  <h5 style="color: var(--accent-emerald);">✅ Plan de Acción: Qué Hacer</h5>
+                  <p>${c.expert_thinking.what_to_do}</p>
+                </div>
+                <div class="expert-subcard expert-what-not">
+                  <h5 style="color: var(--accent-rose);">⚠️ Errores y Trampas: Qué NO Hacer</h5>
+                  <p>${c.expert_thinking.what_not_to_do}</p>
+                </div>
               </div>
             </div>
-
-            <div class="expert-grid-2">
-              <div class="expert-subcard expert-what-todo">
-                <h5 style="color: var(--accent-emerald);">✅ Plan de Acción: Qué Hacer</h5>
-                <p>${c.expert_thinking.what_to_do}</p>
-              </div>
-              <div class="expert-subcard expert-what-not">
-                <h5 style="color: var(--accent-rose);">⚠️ Errores y Trampas: Qué NO Hacer</h5>
-                <p>${c.expert_thinking.what_not_to_do}</p>
-              </div>
-            </div>
-          </div>
-        ` : ''}
+          ` : ''}
+        </div>
       </div>
-    </div>
-  `).join('');
+    `;
+  }).join('');
 
   attachCaseFilterEvents();
 }
