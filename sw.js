@@ -1,5 +1,5 @@
-// Service Worker v7.0 - Test de Exploración Física en Dolor
-const CACHE_NAME = 'dolor-tests-v7';
+// Service Worker v8.0 - Test de Exploración Física en Dolor
+const CACHE_NAME = 'dolor-tests-v8';
 
 self.addEventListener('install', (event) => {
   self.skipWaiting();
