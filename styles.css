@@ -1932,3 +1932,159 @@ body.dark-theme .mobile-bottom-bar {
 .expert-what-not {
   border-left: 4px solid var(--accent-rose);
 }
+
+/* ==========================================================================
+   FICHAS DE CONSULTA RAPIDA STYLES (PAQUETE v2.3)
+   ========================================================================== */
+.fichas-header {
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.25rem;
+  border-left: 4px solid var(--accent-emerald);
+}
+
+.fichas-header-content h2 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.fichas-header-content p {
+  font-size: 0.84rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.fichas-filters-bar {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.85rem;
+  margin-bottom: 1.25rem;
+  scrollbar-width: none;
+}
+
+.fichas-filters-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.fichas-filter-chip {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  padding: 0.45rem 0.9rem;
+  border-radius: var(--radius-full);
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: var(--transition);
+}
+
+.fichas-filter-chip:hover {
+  border-color: var(--accent-emerald);
+  color: var(--text-primary);
+}
+
+.fichas-filter-chip.active {
+  background: rgba(16, 185, 129, 0.12);
+  border-color: var(--accent-emerald);
+  color: #059669;
+}
+
+body.dark-theme .fichas-filter-chip.active {
+  color: #34d399;
+}
+
+.fichas-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.ficha-card {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: var(--transition);
+}
+
+.ficha-card:hover {
+  border-color: var(--accent-emerald);
+}
+
+.ficha-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.85rem;
+}
+
+.ficha-title-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.ficha-icon {
+  font-size: 1.6rem;
+}
+
+.ficha-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.ficha-sections-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 0.85rem;
+}
+
+.ficha-section-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.15rem;
+}
+
+.ficha-section-title {
+  font-size: 0.86rem;
+  font-weight: 800;
+  color: var(--accent-emerald);
+  margin-bottom: 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+body.dark-theme .ficha-section-title {
+  color: #34d399;
+}
+
+.ficha-section-content {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  white-space: pre-line;
+  line-height: 1.6;
+}
+
+.ficha-toggle-full-btn {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.76rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.ficha-toggle-full-btn:hover {
+  border-color: var(--accent-emerald);
+  color: var(--text-primary);
+}

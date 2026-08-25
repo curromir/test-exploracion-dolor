@@ -46,6 +46,7 @@ const DOM = {
   videotecaGrid: document.getElementById('videotecaGrid'),
   comparativeTableBody: document.getElementById('comparativeTableBody'),
   notionGuideContainer: document.getElementById('notionGuideContainer'),
+  fichasContainer: document.getElementById('fichasContainer'),
   casesContainer: document.getElementById('casesContainer'),
   quizScoreDisplay: document.getElementById('quizScoreDisplay'),
   favGrid: document.getElementById('favGrid'),
@@ -74,7 +75,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 // Load Database
 async function loadCatalog() {
   try {
-    const res = await fetch('data/tests_catalog.json?v=9.0');
+    const res = await fetch('data/tests_catalog.json?v=10.0');
     if (!res.ok) throw new Error('Error al cargar tests_catalog.json');
     state.catalog = await res.json();
     state.tests = state.catalog.tests || [];
@@ -86,6 +87,7 @@ async function loadCatalog() {
     renderVideoteca('all');
     renderComparativeTable();
     renderNotionGuide();
+  renderFichas();
     renderCases();
     renderFavorites();
   } catch (err) {
@@ -625,6 +627,55 @@ function renderNotionGuide() {
   `).join('');
 }
 
+
+
+// Render Fichas de Consulta de Dolor (Paquete v2.3)
+let currentFichaFilter = 'all';
+
+function renderFichas() {
+  if (!DOM.fichasContainer || !state.catalog || !state.catalog.fichas_consulta) return;
+
+  let fichasList = [...state.catalog.fichas_consulta];
+  if (currentFichaFilter !== 'all') {
+    fichasList = fichasList.filter(f => f.category === currentFichaFilter);
+  }
+
+  DOM.fichasContainer.innerHTML = fichasList.map(f => `
+    <div class="ficha-card glass-panel" id="${f.id}">
+      <div class="ficha-header">
+        <div class="ficha-title-group">
+          <span class="ficha-icon">${f.icon}</span>
+          <div>
+            <h3 class="ficha-title">${f.title}</h3>
+            <span class="region-tag" style="margin-top: 0.25rem; display: inline-block;">${f.region}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="ficha-sections-grid">
+        ${f.sections.map(sec => `
+          <div class="ficha-section-card">
+            <h4 class="ficha-section-title">📌 ${sec.title}</h4>
+            <p class="ficha-section-content">${sec.content}</p>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  `).join('');
+
+  attachFichasFilterEvents();
+}
+
+function attachFichasFilterEvents() {
+  document.querySelectorAll('.fichas-filter-chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      document.querySelectorAll('.fichas-filter-chip').forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+      currentFichaFilter = chip.getAttribute('data-ficha-filter');
+      renderFichas();
+    });
+  });
+}
 
 // Interactive Case Answering Logic
 window.answerCaseQuestion = function(caseId, selectedIdx) {
