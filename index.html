@@ -196,9 +196,10 @@
           <span class="tab-icon">📊</span>
           <span class="tab-text">Comparativa & Clústeres</span>
         </button>
-        <button class="nav-tab" data-tab="tab-algoritmos">
-          <span class="tab-icon">🧠</span>
-          <span class="tab-text">Algoritmos Clínicos</span>
+        <button class="nav-tab" data-tab="tab-notion">
+          <span class="tab-icon">📑</span>
+          <span class="tab-text">Guía Notion por Áreas</span>
+          <span class="tab-badge-highlight" style="background: rgba(37, 99, 235, 0.15); color: var(--accent-blue);">Notion 3.0</span>
         </button>
         <button class="nav-tab" data-tab="tab-quiz">
           <span class="tab-icon">📝</span>
@@ -352,14 +353,19 @@
         </div>
       </section>
 
-      <!-- TAB 4: Interactive Decision Algorithms -->
-      <section id="tab-algoritmos" class="tab-pane">
-        <div class="algorithms-header glass-panel">
-          <h2>🧠 Algoritmos de Razonamiento Clínico</h2>
-          <p>Árboles de decisión sistemáticos basados en motivo de consulta para orientar la anamnesis, descarte de banderas rojas y aplicación secuencial de pruebas.</p>
+      <!-- TAB 4: Guía Sistemática por Áreas (Estructura Notion) -->
+      <section id="tab-notion" class="tab-pane">
+        <div class="notion-guide-header glass-panel">
+          <div class="notion-guide-intro">
+            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.25rem;">
+              <span style="font-size: 1.5rem;">📑</span>
+              <h2>TEST DE EXPLORACIÓN POR ÁREAS (Ecosistema Notion)</h2>
+            </div>
+            <p>Guía estructurada de evaluación clínica, criterios diagnósticos High-Yield, banderas rojas y selección de pruebas complementarias (RMN, TC, Ecografía, Bloqueos y EMG) extraída directamente de tus páginas maestras de dolor.</p>
+          </div>
         </div>
 
-        <div class="algorithms-container" id="algorithmsContainer">
+        <div class="notion-guide-container" id="notionGuideContainer">
           <!-- Rendered by app.js -->
         </div>
       </section>
@@ -419,9 +425,9 @@
         <span class="mob-icon">📊</span>
         <span class="mob-label">Tablas</span>
       </button>
-      <button class="mobile-nav-item" data-tab="tab-algoritmos">
-        <span class="mob-icon">🧠</span>
-        <span class="mob-label">Algoritmos</span>
+      <button class="mobile-nav-item" data-tab="tab-notion">
+        <span class="mob-icon">📑</span>
+        <span class="mob-label">Guía Notion</span>
       </button>
       <button class="mobile-nav-item" data-tab="tab-quiz">
         <span class="mob-icon">📝</span>

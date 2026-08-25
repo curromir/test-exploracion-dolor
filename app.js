@@ -42,7 +42,7 @@ const DOM = {
   sortSelect: document.getElementById('sortSelect'),
   videotecaGrid: document.getElementById('videotecaGrid'),
   comparativeTableBody: document.getElementById('comparativeTableBody'),
-  algorithmsContainer: document.getElementById('algorithmsContainer'),
+  notionGuideContainer: document.getElementById('notionGuideContainer'),
   casesContainer: document.getElementById('casesContainer'),
   quizScoreDisplay: document.getElementById('quizScoreDisplay'),
   favGrid: document.getElementById('favGrid'),
@@ -82,7 +82,7 @@ async function loadCatalog() {
     applyFilterAndSort();
     renderVideoteca('all');
     renderComparativeTable();
-    renderAlgorithms();
+    renderNotionGuide();
     renderCases();
     renderFavorites();
   } catch (err) {
@@ -589,25 +589,35 @@ window.openTestById = function(id) {
   if (test) openTestDetailModal(test);
 };
 
-// Render Decision Algorithms
-function renderAlgorithms() {
-  if (!DOM.algorithmsContainer || !state.catalog || !state.catalog.algorithms) return;
-  DOM.algorithmsContainer.innerHTML = state.catalog.algorithms.map(algo => `
-    <div class="algo-card glass-panel">
-      <div class="algo-card-title">
-        <span>⚡</span> <span>${algo.title}</span>
+// Render Notion Guide by Areas (Replacing Algorithms)
+function renderNotionGuide() {
+  if (!DOM.notionGuideContainer || !state.catalog || !state.catalog.notion_guide) return;
+  DOM.notionGuideContainer.innerHTML = state.catalog.notion_guide.map(item => `
+    <div class="notion-area-card glass-panel" id="${item.id}">
+      <div class="notion-area-header">
+        <span class="notion-area-icon">${item.icon}</span>
+        <h3 class="notion-area-title">${item.area}</h3>
       </div>
-      <div class="algo-steps-flow">
-        ${algo.steps.map(s => `
-          <div class="algo-step-item">
-            <div class="algo-step-num">${s.step}</div>
-            <div class="algo-step-content">
-              <h4>${s.action}</h4>
-              <p>${s.detail}</p>
+
+      <div class="notion-high-yield-box">
+        <div class="notion-high-yield-title">
+          <span>⚡</span> <span>Puntos Clave High-Yield (Notion Mentor)</span>
+        </div>
+        <ul class="notion-high-yield-list">
+          ${item.high_yield.map(pt => `<li>${pt}</li>`).join('')}
+        </ul>
+      </div>
+
+      ${item.sections && item.sections.length > 0 ? `
+        <div class="notion-subsections-grid">
+          ${item.sections.map(sec => `
+            <div class="notion-subsection-card">
+              <h4 class="notion-subsection-title">📌 ${sec.title}</h4>
+              <p class="notion-subsection-content">${sec.content}</p>
             </div>
-          </div>
-        `).join('')}
-      </div>
+          `).join('')}
+        </div>
+      ` : ''}
     </div>
   `).join('');
 }

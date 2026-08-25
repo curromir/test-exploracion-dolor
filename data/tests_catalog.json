@@ -2089,104 +2089,6 @@
       ]
     }
   ],
-  "algorithms": [
-    {
-      "id": "algo-hombro",
-      "title": "Algoritmo: Dolor Anterior de Hombro",
-      "region": "hombro",
-      "steps": [
-        {
-          "step": 1,
-          "action": "Descartar Banderas Rojas",
-          "detail": "Dolor referido cardíaco (diaforesis, disnea en >50 años), Tumor de Pancoast (síndrome de Horner, masa apical), Artritis séptica (fiebre, calor local)."
-        },
-        {
-          "step": 2,
-          "action": "Test de Hawkins-Kennedy y Neer",
-          "detail": "Si positivos con arco doloroso 60-120° → Pinzamiento Subacromial / Manguito Rotador. Realizar Test de Jobe y Patte."
-        },
-        {
-          "step": 3,
-          "action": "Test de Speed y Yergason",
-          "detail": "Si dolor selectivo en corredera anterior → Tendinopatía de Porción Larga del Bíceps."
-        },
-        {
-          "step": 4,
-          "action": "Test de O'Brien y Crank",
-          "detail": "Si dolor profundo que cede en supinación → Lesión Labral / SLAP."
-        },
-        {
-          "step": 5,
-          "action": "Aprensión y Relocalización",
-          "detail": "Si sensación de que el hombro se sale → Inestabilidad Glenohumeral Anterior (Bankart)."
-        }
-      ]
-    },
-    {
-      "id": "algo-lumbar",
-      "title": "Algoritmo: Dolor Lumbar y Ciatalgia",
-      "region": "lumbar",
-      "steps": [
-        {
-          "step": 1,
-          "action": "Descartar Síndrome de Cauda Equina",
-          "detail": "Anestesia en silla de montar, retención o incontinencia urinaria/fecal, debilidad bilateral progresiva → ¡URGENCIA QUIRÚRGICA INMEDIATA!"
-        },
-        {
-          "step": 2,
-          "action": "Batería de Tensión Neural (Lasègue + Slump)",
-          "detail": "Si positivos con dolor bajo la rodilla → Radiculopatía Lumbar (L4-L5-S1). Evaluar Lasègue Cruzado."
-        },
-        {
-          "step": 3,
-          "action": "Test de Kemp y Cierre Facetario",
-          "detail": "Si dolor puramente lumbar paravertebral al extender y rotar → Síndrome Facetario Lumbar."
-        },
-        {
-          "step": 4,
-          "action": "Clúster de Laslett (Thigh Thrust, Distraction, etc.)",
-          "detail": "Si dolor en glúteo bajo L5 con ≥3 pruebas positivas → Disfunción de Articulación Sacroilíaca."
-        },
-        {
-          "step": 5,
-          "action": "Test FAIR y Palpación Glútea",
-          "detail": "Si Lasègue negativo pero dolor ciático al cruzar pierna a 60° → Síndrome del Piriforme."
-        }
-      ]
-    },
-    {
-      "id": "algo-rodilla",
-      "title": "Algoritmo: Rodilla Traumática Aguda",
-      "region": "rodilla",
-      "steps": [
-        {
-          "step": 1,
-          "action": "Inspección de Hemartrosis y 'Pop'",
-          "detail": "70% de hemartrosis a tensión tras giro deportivo corresponden a Ruptura de LCA."
-        },
-        {
-          "step": 2,
-          "action": "Test de Lachman y Lever Sign",
-          "detail": "Si traslación aumentada y tope blando → Lesión del LCA. Realizar Pivot Shift."
-        },
-        {
-          "step": 3,
-          "action": "Sag Sign y Cajón Posterior",
-          "detail": "Si caída posterior de la tibia por gravedad → Lesión del LCP."
-        },
-        {
-          "step": 4,
-          "action": "Estrés en Valgo y Varo a 30° y 0°",
-          "detail": "Apertura medial a 30° = LCM aislado; apertura a 0° = Lesión multiligamentaria."
-        },
-        {
-          "step": 5,
-          "action": "Test de McMurray y Thessaly a 20°",
-          "detail": "Si bloqueo articular mecánico o clic con dolor en interlínea → Desgarro Meniscal."
-        }
-      ]
-    }
-  ],
   "clinical_cases": [
     {
       "id": "case-1",
@@ -2286,6 +2188,201 @@
       ],
       "correct_index": 1,
       "explanation": "El antecedente de giro en pivote con 'pop' audible, hemartrosis rápida y la tríada de Lachman + Lever Sign + Pivot Shift positivos es patognomónica de rotura completa del LCA con más del 98% de certeza diagnóstica."
+    }
+  ],
+  "notion_guide": [
+    {
+      "id": "notion-principios",
+      "area": "0. Principios Generales de Evaluación en Dolor",
+      "icon": "⚖️",
+      "high_yield": [
+        "La base diagnóstica es siempre clínica: anamnesis + exploración física sistemática.",
+        "Las pruebas complementarias (imagen, neurofisiología, bloqueos) apoyan y objetivan, pero nunca sustituyen la clínica.",
+        "Correlación imperfecta imagen-dolor: los hallazgos degenerativos (artrosis, protusiones) son frecuentes en asintomáticos.",
+        "Bloqueos diagnósticos = localización funcional del generador de dolor (anestésico local de corta duración)."
+      ],
+      "sections": [
+        {
+          "title": "Elección de Pruebas Complementarias",
+          "content": "Elegir técnica según sospecha clínica específica, disponibilidad y balance riesgo/beneficio (evitar irradiación innecesaria en pacientes jóvenes o repetidores)."
+        },
+        {
+          "title": "Cuándo recurrir a Bloqueos Diagnósticos",
+          "content": "Indicados ante sospecha de dolor facetario (bloqueo de ramo medial), articulación sacroilíaca o neuropatías periféricas específicas antes de proceder a técnicas de radiofrecuencia o neuromodulación."
+        }
+      ]
+    },
+    {
+      "id": "notion-craneofacial",
+      "area": "1. Región Craneofacial & Cefaleas",
+      "icon": "🧠",
+      "high_yield": [
+        "ATM: Prueba de elección es la RMN (evalúa disco articular y tejidos blandos sin irradiación).",
+        "Neuralgia del Trigémino: Angio-RMN de fosa posterior para descartar bucle o compresión neurovascular.",
+        "Cefaleas de urgencia (TC): Cefalea en trueno ('thunderclap'), explosiva, fiebre + rigidez de nuca o focalidad neurológica.",
+        "Punción lumbar: Indicada ante alta sospecha de HSA con TC normal o sospecha de neuroinfección / alteración de presión de LCR."
+      ],
+      "sections": [
+        {
+          "title": "Criterios para TC vs RMN en Cefalea",
+          "content": "• TC: Escenario agudo de urgencias, hemorragia subaracnoidea aguda, traumatismo craneal, hidrocefalia aguda.\n• RMN: Cefalea subaguda/crónica, lesiones en fosa posterior, fístula de LCR (con gadolinio), trombosis venosa y malformación de Chiari."
+        }
+      ]
+    },
+    {
+      "id": "notion-cervical",
+      "area": "2. Columna Cervical & Mielopatía / Radiculopatía",
+      "icon": "🎯",
+      "high_yield": [
+        "Clúster de Wainner (Radiculopatía Cervical): Spurling + Distracción + ULTT 1 (Mediano) + Rotación <60° (4/4 positivas = LR+ 30.3).",
+        "Mielopatía Cervical Espondilótica: Signo de Hoffmann, Clonus, Babinski y signo del escape digital (Finger Escape). Requiere RMN cervical urgente.",
+        "Bloqueo de Ramo Medial Cervical: Test confirmatorio ante dolor facetario axial antes de plantear radiofrecuencia.",
+        "Diferenciación dolor miofascial vs radicular: El dolor miofascial no sigue dermatoma y presenta bandas tensas con puntos gatillo reproducibles."
+      ],
+      "sections": [
+        {
+          "title": "Sistemática de Exploración Cervical",
+          "content": "1. Inspección y arcos de movilidad activa/pasiva.\n2. Maniobras de provocación foraminal (Spurling, Jackson, Soto-Hall).\n3. Maniobras de neurodinámica (ULTT 1 Elvey para mediano, ULTT 2 para radial, ULTT 3 para cubital).\n4. Batería de primera motoneurona (Hoffmann, Babinski, Clonus, marcha)."
+        }
+      ]
+    },
+    {
+      "id": "notion-hombro",
+      "area": "3. Hombro & Cintura Escapular",
+      "icon": "🦴",
+      "high_yield": [
+        "Pinzamiento Subacromial: Hawkins-Kennedy (el más sensible) + Neer + Arco doloroso de 60° a 120°.",
+        "Manguito Rotador: Jobe / Empty Can (Supraespinoso), Patte / Rotación externa resistida (Infraespinoso), Lift-Off / Belly Press (Subescapular), Drop Arm (Rotura masiva).",
+        "Porción Larga del Bíceps: Speed Test (tracción resistida) + Yergason (estabilidad en corredera).",
+        "Labrum y SLAP: Test de O'Brien (dolor profundo que cede en supinación) + Crank Test.",
+        "Inestabilidad Glenohumeral: Test de Aprensión + Test de Relocalización de Jobe + Sulcus Sign (laxitud inferior)."
+      ],
+      "sections": [
+        {
+          "title": "Ecografía vs RMN en Hombro",
+          "content": "La ecografía de hombro es la técnica inicial de elección por coste, dinamismo y resolución en tendones del manguito; la RMN se reserva ante sospecha de roturas masivas complejas, labrum/SLAP o dudas ecográficas."
+        }
+      ]
+    },
+    {
+      "id": "notion-codo",
+      "area": "4. Codo & Antebrazo",
+      "icon": "🦾",
+      "high_yield": [
+        "Epicondilalgia Lateral ('Codo de Tenista'): Test de Cozen (extensión activa de muñeca con desviación radial) + Test de Mill (estiramiento pasivo) + Test de Maudsley (extensión del 3er dedo).",
+        "Epicondilalgia Medial ('Codo de Golfista'): Golfer's Elbow Test (flexión y pronación resistida). Siempre descartar afectación cubital asociada.",
+        "Canal Cubital: Tinel retroepitroclear + Elbow Flexion Test sostenido 60 segundos.",
+        "Inestabilidad Medial: Moving Valgus Stress Test de O'Driscoll (Sensibilidad 100% en atletas lanzadores)."
+      ],
+      "sections": [
+        {
+          "title": "Diagnóstico Diferencial en Codo",
+          "content": "Diferenciar epicondilalgia resistente al tratamiento del síndrome del túnel radial (atrapamiento de la rama interósea posterior del nervio radial) y de inestabilidad posterolateral rotatoria."
+        }
+      ]
+    },
+    {
+      "id": "notion-mano",
+      "area": "5. Muñeca & Mano",
+      "icon": "🤲",
+      "high_yield": [
+        "Síndrome del Túnel Carpiano (STC): Test de Durkan (el más sensible, compresión directa 30s) + Phalen / Reverse Phalen + Tinel del mediano.",
+        "Tenosinovitis de De Quervain: Test de Finkelstein (pasivo) vs Test de Eichhoff (activo). Afectación del 1er compartimento extensor (APL + EPB).",
+        "Inestabilidad Escafosemilunar (DISI): Watson Shift Test (resalte y clunk al liberar la presión del escafoides).",
+        "Inestabilidad ARCD / TFCC: Piano Key Test (rebote de cabeza cubital) + Ulnar Fovea Sign.",
+        "Paresia Cubital Motora: Signo de Froment (flexión compensatoria de IF del pulgar) + Signo de Jeanne + Signo de Wartenberg (separación fija del 5º dedo)."
+      ],
+      "sections": [
+        {
+          "title": "Valoración EMG en Atrapamientos de Muñeca",
+          "content": "El EMG/ENG objetiva la latencia motora y sensitiva distal, clasifica la severidad (leve, moderada, severa) y descarta una doble compresión proximal (síndrome 'double crush' C6-C7 + túnel carpiano)."
+        }
+      ]
+    },
+    {
+      "id": "notion-lumbar",
+      "area": "6. Columna Lumbar, Torácica & Dolor de Espalda",
+      "icon": "⚡",
+      "high_yield": [
+        "Banderas Rojas en Dolor Lumbar: Síndrome de Cauda Equina (anestesia en silla de montar, pérdida de control de esfínteres, debilidad bilateral) → ¡Urgencia quirúrgica inmediata!",
+        "Radiculopatía Lumbosacra: Lasègue (SLR, alta sensibilidad) + Lasègue Cruzado (especificidad >94% para hernia discal medial) + Slump Test (tensión neuromeníngea con diferenciación cervical).",
+        "Síndrome Facetario Lumbar: Test de Kemp (cuadrante de extensión, inclinación y rotación ipsilateral) → dolor local paravertebral sin sobrepasar rodilla.",
+        "Estenosis de Canal Lumbar: Claudicación neurógena en la marcha que mejora al flexionar el tronco ('signo del carrito del supermercado') o sentarse."
+      ],
+      "sections": [
+        {
+          "title": "Estrategia Diagnóstica en Dolor Lumbar",
+          "content": "1. Descartar Cauda Equina, fracturas vertebrales patológicas o infección.\n2. Clasificar el dolor: axial somático (facetario / discogénico) vs radicular neuropático.\n3. Bloqueo diagnóstico del ramo medial lumbar como paso previo a radiofrecuencia térmica."
+        }
+      ]
+    },
+    {
+      "id": "notion-sacroiliaca",
+      "area": "7. Pelvis & Articulación Sacroilíaca",
+      "icon": "🎯",
+      "high_yield": [
+        "Clúster de Laslett (Gold Standard): Batería de 5 pruebas de provocación (Thigh Thrust, Distraction, Sacral Thrust, Compression, Gaenslen). Requiere ≥3 de 5 positivas (Probabilidad post-test >90%).",
+        "Thigh Thrust: La prueba individual más sensible (88%) y ancla del clúster de Laslett.",
+        "Síndrome del Piriforme / Espacio Subglúteo: FAIR Test (Flexión 60° + Aducción + Rotación interna) en decúbito lateral.",
+        "Active Straight Leg Raise (ASLR): Valora la transferencia de cargas y la inestabilidad de la cintura pélvica postparto o traumática."
+      ],
+      "sections": [
+        {
+          "title": "Regla Nemotécnica del Clúster de Laslett",
+          "content": "Realizar primero Thigh Thrust y Distraction Test. Si ambos son positivos, el diagnóstico de dolor sacroilíaco está prácticamente confirmado; si son negativos, continuar con Sacral Thrust y Compression."
+        }
+      ]
+    },
+    {
+      "id": "notion-cadera",
+      "area": "8. Cadera & Coxofemoral",
+      "icon": "🦿",
+      "high_yield": [
+        "Pinzamiento Femoroacetabular (FAI) & Labrum: Test FADIR (Flexión 90° + Aducción + Rotación interna, Sensibilidad >90%).",
+        "Diferencial Cadera vs Sacroilíaco: Test FABER / Patrick ('Si duele delante en ingle = Cadera; si duele detrás en nalga = Sacroilíaca').",
+        "Insuficiencia de Abductores: Test de Trendelenburg (caída de hemipelvis contralateral en apoyo monopodal).",
+        "Acortamiento Flexor de Cadera: Test de Thomas (psoas / recto anterior) y Test de Ober (banda iliotibial)."
+      ],
+      "sections": [
+        {
+          "title": "Diferencial de Dolor Inguinal y Glúteo",
+          "content": "El dolor articular coxofemoral se manifiesta típicamente en la ingle con signo de la 'C' de Byrne; el dolor en cara lateral del trocánter orienta a síndrome de dolor trocantérico mayor (tendinopatía de glúteo medio/menor o bursitis)."
+        }
+      ]
+    },
+    {
+      "id": "notion-rodilla",
+      "area": "9. Rodilla",
+      "icon": "🦵",
+      "high_yield": [
+        "Ligamento Cruzado Anterior (LCA): Test de Lachman a 20-30° (el más sensible) + Pivot Shift Test (el más específico, resalte 30-40°) + Lever Sign (Lelli).",
+        "Ligamento Cruzado Posterior (LCP): Sag Sign / Signo de Godfrey (caída posterior de tibia a 90°) + Cajón Posterior.",
+        "Desgarros Meniscales: Test de McMurray (clic palpable en interlínea) + Test de Thessaly a 20° (compresión activa en carga monopodal) + Apley Compresión.",
+        "Ligamentos Colaterales: Estrés en Valgo (LCM) y Varo (LCL) a 30° (aislado) y a 0° (lesión multiligamentaria asociada)."
+      ],
+      "sections": [
+        {
+          "title": "Hemartrosis Aguda de Rodilla",
+          "content": "Más del 70% de las hemartrosis a tensión tras giro deportivo con 'pop' audible corresponden a rotura completa del LCA. La punción evacuadora alivia el dolor y permite una exploración de Lachman precisa."
+        }
+      ]
+    },
+    {
+      "id": "notion-tobillo",
+      "area": "10. Tobillo & Pie",
+      "icon": "🦶",
+      "high_yield": [
+        "Tendón de Aquiles: Test de Thompson / Simmonds (ausencia de flexión plantar al apretar pantorrilla) + Signo del hachazo palpable. Sensibilidad 97% y Especificidad 96%.",
+        "Fascia Plantar: Test de Windlass (extensión pasiva forzada del hallux que reproduce dolor en tubérculo medial de calcáneo, Especificidad 99%).",
+        "Inestabilidad Lateral de Tobillo: Test del Cajón Anterior de tobillo (LPAA) + Talar Tilt Test (LFC).",
+        "Neuroma de Morton: Signo de Mulder (compresión lateral de metatarsianos con clic palpable)."
+      ],
+      "sections": [
+        {
+          "title": "Reglas de Ottawa para Tobillo y Pie",
+          "content": "Indicar radiografía sólo si hay dolor en zona maleolar/mediopié Y (dolor a la palpación en bordes posteriores de maléolos/base del 5º meta/navicular O incapacidad de dar 4 pasos seguidos)."
+        }
+      ]
     }
   ]
 }
