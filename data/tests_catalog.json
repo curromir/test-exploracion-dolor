@@ -2091,103 +2091,328 @@
   ],
   "clinical_cases": [
     {
-      "id": "case-1",
-      "title": "Caso 1: Lanzador de Béisbol con Dolor Anterior",
-      "region": "hombro",
-      "patient": "Varón, 24 años, lanzador. Refiere dolor anterior de hombro derecho de 4 meses que empeora en la fase de armado tardío del lanzamiento.",
+      "id": "notion-case-1",
+      "source": "notion",
+      "category": "lumbar",
+      "title": "Caso N1: Radiculopatía L5 Típica Neuropática",
+      "patient": "Varón de 46 años, mozo de almacén. Refiere dolor lumbar y en pierna derecha de 9 meses de evolución que inició tras cargar peso. Dolor continuo 7/10 con picos de 9/10 tipo quemazón, descargas eléctricas y hormigueo que recorre la cara lateral de la pierna hasta el dorso del pie. Empeora sentado, al toser y por la noche.",
       "findings": [
         {
-          "test": "Test de Aprensión",
-          "result": "Negativo (sin sensación de inestabilidad)"
+          "test": "Test de Lasègue (SLR)",
+          "result": "Positivo a 45° con reproducción de quemazón hasta dorso del pie"
         },
         {
-          "test": "Test de O'Brien",
-          "result": "Positivo (dolor profundo en pronación, alivia en supinación)"
+          "test": "Test de Bragard",
+          "result": "Positivo franco al dorsiflexionar el tobillo"
         },
         {
-          "test": "Crank Test",
-          "result": "Positivo con clic palpable"
+          "test": "Sensibilidad L5",
+          "result": "Hipoestesia en cara anterolateral de pierna y dorso del pie"
         },
         {
-          "test": "Speed Test",
-          "result": "Positivo moderado en corredera"
+          "test": "Fuerza Motora",
+          "result": "Paresia leve (4/5) para la dorsiflexión del 1.er dedo (EHL)"
         }
       ],
-      "question": "¿Cuál es el diagnóstico más probable?",
+      "question": "¿Cuál es el diagnóstico sindrómico principal y la conducta inicial más adecuada?",
       "options": [
-        "Pinzamiento subacromial aislado",
-        "Lesión del Labrum Superior (SLAP tipo II) con tendinopatía asociada de la PLB",
-        "Rotura completa del tendón subescapular",
-        "Inestabilidad glenohumeral multidireccional"
+        "Lumbalgia inespecífica somática: prescribir AINEs en pauta larga y reposo en cama",
+        "Radiculopatía L5 con dolor neuropático: iniciar neuromodulador (pregabalina/duloxetina), fisioterapia activa y valorar infiltración epidural transforaminal",
+        "Síndrome facetario lumbar bilateral: solicitar bloqueo de ramos mediales",
+        "Síndrome del piriforme: infiltrar toxina botulínica en glúteo"
       ],
       "correct_index": 1,
-      "explanation": "El dolor profundo en el O'Brien que se alivia con la supinación, junto al clic articular en el Crank Test en un atleta lanzador, es diagnóstico típico de una lesión SLAP (Superior Labrum Anterior to Posterior), frecuentemente acompañada de sobrecarga de la porción larga del bíceps."
+      "explanation": "El trayecto fijo hasta el dorso del pie con quemazón/descargas, Lasègue y Bragard positivos e hipoestesia L5 es diagnóstico de radiculopatía L5 neuropática. ¡Qué NO hacer!: No dar AINEs de forma indefinida ni infiltrar facetas por tratarse de un dolor lumbar bajo.",
+      "expert_thinking": {
+        "alicia": "A: 9 meses tras esfuerzo | L: Lumbar + cara lateral pierna hasta dorso pie | I: 7-9/10 | C: Quemazón, descargas, disestesias | A: Peor sentado y maniobras de Valsalva.",
+        "abcde": "A: Raíz L5 derecha | B: Neuropático dominante | C: Crónico (9 meses) | D: Limitación laboral moderada-severa | E: Insomnio y catastrofismo.",
+        "what_to_do": "Neuromoduladores orales (Pregabalina / Gabapentina o Duloxetina) + educación en dolor y rehabilitación + valorar Epidural Transforaminal (TFESI) guiada por fluoroscopia.",
+        "what_not_to_do": "No mantener AINEs crónicos (no es dolor inflamatorio puro), no infiltrar facetas a ciegas, no indicar reposo prolongado."
+      }
     },
     {
-      "id": "case-2",
-      "title": "Caso 2: Mujer con Dolor Glúteo y Ciatalgia sin Lumbalgia",
-      "region": "sacroiliaca",
-      "patient": "Mujer de 38 años, corredora amateur. Consulta por dolor glúteo profundo derecho que irradia hacia la cara posterior del muslo hasta la corva. Empeora al permanecer sentada más de 30 minutos. No tiene dolor lumbar previo.",
+      "id": "notion-case-2",
+      "source": "notion",
+      "category": "lumbar",
+      "title": "Caso N2: Estenosis de Canal Lumbar con Claudicación Neurógena",
+      "patient": "Mujer de 72 años. Presenta dolor lumbar y pesadez intensa con calambres en ambas piernas desde hace 3 años. El dolor aparece al caminar 100-150 metros (6/10) y la obliga a detenerse. Mejora rápidamente al sentarse o al inclinarse hacia delante apoyada en el carro de la compra.",
       "findings": [
         {
-          "test": "Test de Lasègue",
-          "result": "Negativo (sin dolor hasta 80°)"
+          "test": "Examen Neurológico en Reposo",
+          "result": "Normal (reflejos rotulianos y aquíleos simétricos, sin déficit motor evidente)"
         },
         {
-          "test": "Test FAIR",
-          "result": "Positivo franco (reproduce dolor glúteo y corrientazo)"
+          "test": "Test de la Marcha (Stress Test)",
+          "result": "Reproduce pesadez bilateral y acorchamiento a los 2 minutos"
         },
         {
-          "test": "Clúster de Laslett",
-          "result": "Solo 1 de 5 positiva (Thigh Thrust negativo)"
+          "test": "Postura en Flexión vs Extensión",
+          "result": "Flexión lumbar alivia inmediatamente; extensión reproduce síntomas"
         },
         {
-          "test": "RMN Lumbar",
-          "result": "Discos lumbares normales sin hernia discal"
+          "test": "Pulsos Periféricos (Pedio y Tibial Posterior)",
+          "result": "Conservados y simétricos (ITB normal >0.9)"
         }
       ],
-      "question": "¿Cuál es el diagnóstico clínico y conducta inicial?",
+      "question": "¿Cuál es la clave diagnóstica y terapéutica de este cuadro?",
       "options": [
-        "Hernia discal foraminal L4-L5",
-        "Síndrome del Piriforme con atrapamiento del nervio ciático en espacio subglúteo",
-        "Sacroileítis inflamatoria activa",
-        "Coxartrosis rápidamente progresiva"
+        "Hernia discal L4-L5 aguda: programar microdiscectomía urgente",
+        "Arteriopatía periférica con claudicación vascular: derivar a Cirugía Vascular",
+        "Estenosis de canal lumbar con claudicación neurógena: programa de flexión lumbar, optimizar analgesia y considerar epidural interlaminar/caudal",
+        "Artrosis de cadera bilateral: infiltración intraarticular con corticoides"
       ],
-      "correct_index": 1,
-      "explanation": "El patrón de dolor glúteo con irritación ciática en ausencia de dolor lumbar, con Lasègue negativo, RMN lumbar normal y prueba FAIR positiva a 60° de flexión en decúbito lateral confirma el síndrome del piriforme."
+      "correct_index": 2,
+      "explanation": "El patrón dependiente de la bipedestación/marcha con alivio inmediato en flexión lumbar ('signo del carrito') y pulsos normales confirma claudicación neurógena por estenosis lumbar.",
+      "expert_thinking": {
+        "alicia": "A: 3 años insidioso | L: Lumbar + ambas piernas difuso | I: 6/10 en marcha | C: Pesadez, calambres bilaterales | A: Peor de pie/andando; alivia sentado/flexión.",
+        "abcde": "A: Canal lumbar estrecho | B: Nociceptivo mecánico + neuropático dinámico | C: Crónico | D: Claudicación a 150m | E: Pérdida de autonomía social.",
+        "what_to_do": "Fisioterapia con ejercicios de flexión (Williams) + analgesia escalonada + infiltración epidural interlaminar/caudal si limitación refractaria.",
+        "what_not_to_do": "No confundir con ciática por hernia discal ni con claudicación vascular (revisar siempre pulsos e ITB)."
+      }
     },
     {
-      "id": "case-3",
-      "title": "Caso 3: Futbolista con Giro Brusco y 'Pop' en la Rodilla",
-      "region": "rodilla",
-      "patient": "Varón de 21 años. Al apoyar el pie y girar el cuerpo en un regate de fútbol, escuchó un chasquido ('pop') y la rodilla se le hinchó rápidamente a las pocas horas.",
+      "id": "notion-case-3",
+      "source": "notion",
+      "category": "lumbar",
+      "title": "Caso N3: Lumbalgia Mecánica Facetaria 'De Libro'",
+      "patient": "Varón de 58 años. Consulta por dolor lumbar bajo paravertebral bilateral de 2 años de evolución. Dolor sordo 6/10 tipo presión profunda que irradia a región glútea superior pero nunca sobrepasa las rodillas. Empeora notablemente al estar de pie quieto o al arquear la espalda hacia atrás.",
       "findings": [
         {
-          "test": "Test de Lachman",
-          "result": "Grado II positivo con traslación aumentada y tope blando"
+          "test": "Test de Kemp (Quadrant Lumbar)",
+          "result": "Positivo bilateral con dolor puramente paravertebral lumbar"
         },
         {
-          "test": "Lever Sign (Lelli)",
-          "result": "Positivo (el talón no se despega de la camilla)"
+          "test": "Test de Lasègue y Slump",
+          "result": "Negativos (sin dolor irradiado bajo rodillas)"
         },
         {
-          "test": "Pivot Shift",
-          "result": "Positivo con resalte franco"
+          "test": "Palpación Paravertebral",
+          "result": "Dolor selectivo a la presión sobre macizos articulares L4-L5 y L5-S1"
         },
         {
-          "test": "Test de McMurray",
-          "result": "Dudoso por derrame a tensión"
+          "test": "Movilidad Lumbar",
+          "result": "Extensión muy limitada por dolor; flexión anterior libre y reconfortante"
         }
       ],
-      "question": "¿Qué lesión presenta el paciente?",
+      "question": "¿Cuál es la sospecha diagnóstica y la prueba confirmatoria según el protocolo de dolor?",
       "options": [
-        "Esguince aislado de ligamento colateral medial",
-        "Ruptura completa del Ligamento Cruzado Anterior (LCA)",
-        "Quiste de Baker roto",
-        "Tendinitis rotuliana aguda"
+        "Dolor radicular L5: solicitar EMG urgente",
+        "Síndrome facetario lumbar: realizar bloqueo diagnóstico de los ramos mediales con anestésico local de corta duración",
+        "Espondilitis anquilosante: iniciar terapia biológica",
+        "Inestabilidad discal: prescribir faja rígida permanente"
       ],
       "correct_index": 1,
-      "explanation": "El antecedente de giro en pivote con 'pop' audible, hemartrosis rápida y la tríada de Lachman + Lever Sign + Pivot Shift positivos es patognomónica de rotura completa del LCA con más del 98% de certeza diagnóstica."
+      "explanation": "El dolor lumbar axial sin sobrepasar la rodilla, desencadenado por extensión y rotación (Kemp positivo) con Lasègue negativo, es el patrón típico de síndrome facetario. El bloqueo diagnóstico del ramo medial es el paso confirmatorio indispensable antes de la radiofrecuencia.",
+      "expert_thinking": {
+        "alicia": "A: 2 años | L: Lumbar paravertebral bilateral y glúteos altos | I: 6/10 | C: Presión profunda | A: Peor extensión y bipedestación estática; alivia sentado.",
+        "abcde": "A: Articulaciones facetarias lumbares | B: Nociceptivo mecánico | C: Crónico | D: Dificultad para estar de pie | E: Sin banderas rojas.",
+        "what_to_do": "Bloqueo diagnóstico comparativo de ramos mediales (L3, L4 ramos mediales y L5 ramo dorsal) con lidocaína/bupivacaína; si alivio >70-80%, programar Radiofrecuencia (Rizolisis).",
+        "what_not_to_do": "No usar corticoides epidurales (la diana no es el canal ni la raíz) ni operar con artrodesis sin antes agotar radiofrecuencia."
+      }
+    },
+    {
+      "id": "manual-case-1",
+      "source": "manual_pdf",
+      "category": "sacroiliaca",
+      "title": "Caso M15: Dolor Sacroilíaco frente a Cadera y Faceta Lumbar",
+      "patient": "Mujer de 42 años, multípara. Consulta por dolor en nalga derecha de 8 meses que inició tras su último parto. Dolor sordo 6-7/10 en cuadrante inferomedial de la nalga bajo la espina ilíaca posterosuperior (EIPS / zona de Fortin) que irradia a cara posterior de muslo hasta corva. Empeora al ponerse las medias, al dar zancadas largas y al levantarse de una silla baja.",
+      "findings": [
+        {
+          "test": "Thigh Thrust Test (Laslett)",
+          "result": "Positivo franco (reproduce el dolor familiar en nalga)"
+        },
+        {
+          "test": "Sacroiliac Distraction Test",
+          "result": "Positivo con dolor en cara posterior de articulación"
+        },
+        {
+          "test": "Sacral Thrust Test",
+          "result": "Positivo con sobrepresión en S2"
+        },
+        {
+          "test": "Test de Lasègue y Kemp",
+          "result": "Negativos"
+        },
+        {
+          "test": "Test FABER (Patrick)",
+          "result": "Positivo con dolor referido POSTERIOR en nalga derecha"
+        }
+      ],
+      "question": "¿Qué diagnóstico clínico confirma el Clúster de Laslett en esta paciente?",
+      "options": [
+        "Coxartrosis rápidamente progresiva",
+        "Disfunción / dolor de la articulación sacroilíaca derecha (3/5 pruebas de Laslett positivas = >90% probabilidad)",
+        "Hernia discal extruida L5-S1",
+        "Tendinopatía de isquiotibiales proximales"
+      ],
+      "correct_index": 1,
+      "explanation": "La presencia de 3 o más pruebas positivas en el Clúster de Laslett (Thigh Thrust, Distraction y Sacral Thrust) junto a FABER con dolor posterior bajo la EIPS tiene una especificidad diagnóstica superior al 90% para dolor de articulación sacroilíaca.",
+      "expert_thinking": {
+        "alicia": "A: 8 meses postparto | L: Glúteo bajo EIPS derecha | I: 6-7/10 | C: Sordo punzante | A: Peor cambios posturales, carga unipodal y zancadas.",
+        "abcde": "A: Articulación sacroilíaca | B: Nociceptivo articular/ligamentario | C: Crónico | D: Dificultad para caminar y sentarse | E: Mujer joven activa.",
+        "what_to_do": "Fisioterapia estabilizadora lumbo-pélvica (CORE) + bloqueo articular sacroilíaco guiado por fluoroscopia o ecografía; considerar radiofrecuencia de ramos laterales sacros (S1-S3).",
+        "what_not_to_do": "No atribuir el dolor a hernia discal por ver protusiones en la RM; no indicar infiltración facetaria si el Kemp es negativo."
+      }
+    },
+    {
+      "id": "manual-case-2",
+      "source": "manual_pdf",
+      "category": "hombro",
+      "title": "Caso M4: Capsulitis Adhesiva frente a Tendinopatía del Supraespinoso",
+      "patient": "Mujer de 54 años, diabética tipo 2. Consulta por hombro doloroso izquierdo de 5 meses de evolución. Comenzó con dolor nocturno intenso y ahora nota rigidez severa que le impide abrocharse el sujetador o peinarse. Refiere que 'el brazo está como congelado'.",
+      "findings": [
+        {
+          "test": "Rango de Movilidad Activa",
+          "result": "Abducción 60°, Rotación Externa 10°, Rotación Interna a L5"
+        },
+        {
+          "test": "Rango de Movilidad Pasiva",
+          "result": "Bloqueo mecánico idéntico al activo con tope terminal firme (Rotación externa pasiva <15°)"
+        },
+        {
+          "test": "Test de Hawkins y Neer",
+          "result": "No valorables por rigidez glenohumeral severa"
+        },
+        {
+          "test": "Ecografía de Hombro",
+          "result": "Manguito rotador continuo sin roturas de espesor completo; engrosamiento del ligamento coracohumeral"
+        }
+      ],
+      "question": "¿Cuál es la característica clínica discriminante para confirmar Capsulitis Adhesiva ('Hombro Congelado')?",
+      "options": [
+        "Pérdida de movilidad activa con movilidad pasiva normal",
+        "Pérdida simétrica tanto activa como pasiva del rango articular, especialmente la rotación externa",
+        "Test de Jobe positivo con caída del brazo",
+        "Dolor exclusivamente nocturno con ecografía que muestra rotura total"
+      ],
+      "correct_index": 1,
+      "explanation": "La clave diagnóstica de la capsulitis adhesiva es la limitación severa de la movilidad pasiva (en especial la rotación externa), a diferencia de la patología del manguito donde la movilidad pasiva se mantiene libre.",
+      "expert_thinking": {
+        "alicia": "A: 5 meses en paciente diabética | L: Hombro global | I: 7/10 con dolor nocturno | C: Rigidez progresiva severa | A: Peor cualquier intento de elevación o rotación.",
+        "abcde": "A: Cápsula articular glenohumeral | B: Inflamatorio / fibrótico capsular | C: Fase 2 rigidez | D: Incapacidad para actividades cotidianas | E: Diabetes como factor predisponente.",
+        "what_to_do": "Infiltración intraarticular glenohumeral con corticoide (± hidrodilatación capsular) para abrir ventana terapéutica + fisioterapia suave progresiva en rango no doloroso.",
+        "what_not_to_do": "No realizar manipulaciones forzadas intempestivas sin anestesia (riesgo de fractura o desgarro) ni centrarse solo en la bursa subacromial."
+      }
+    },
+    {
+      "id": "manual-case-3",
+      "source": "manual_pdf",
+      "category": "lumbar",
+      "title": "Caso M14: Sospecha de Síndrome de Cola de Caballo (La Consulta que se Interrumpe)",
+      "patient": "Varón de 39 años con antecedente de hernia discal L5-S1. Acude a consulta programada refiriendo que desde hace 24 horas el dolor ciático se ha extendido a ambas piernas, pero lo que más le asusta es que nota la zona genital y perianal 'como acorchada cuando se limpia con papel' y ha tenido dos episodios de escapes de orina sin sentir ganas.",
+      "findings": [
+        {
+          "test": "Sensibilidad Perianal / Silla de Montar (S2-S5)",
+          "result": "Anestesia / hipoestesia franca bilateral en periné"
+        },
+        {
+          "test": "Tono del Esfínter Anal",
+          "result": "Tono marcadamente disminuido con pérdida del reflejo bulbocavernoso"
+        },
+        {
+          "test": "Fuerza en Miembros Inferiores",
+          "result": "Paresia bilateral en dorsiflexión y flexión plantar (3/5)"
+        },
+        {
+          "test": "Palpación Abdominal",
+          "result": "Globo vesical palpable por retención urinaria con incontinencia por rebosamiento"
+        }
+      ],
+      "question": "¿Cuál es la conducta médica inmediata e inaplazable?",
+      "options": [
+        "Pautar gabapentina a dosis altas y citar para resonancia magnética preferente en 2 semanas",
+        "Realizar una infiltración epidural caudal en consulta para desinflamar la raíz",
+        "Interrumpir la consulta y derivar en ambulancia al Servicio de Urgencias para RMN de columna lumbar emergente y descompresión quirúrgica antes de 24-48h",
+        "Colocar una faja lumbosacra rígida y reposo domiciliario estricto"
+      ],
+      "correct_index": 2,
+      "explanation": "La presencia de anestesia en silla de montar, pérdida de control de esfínteres (incontinencia por rebosamiento) y déficit motor bilateral es la definición de SÍNDROME DE COLA DE CABALLO: una emergencia quirúrgica absoluta para evitar secuelas neurológicas irreversibles.",
+      "expert_thinking": {
+        "alicia": "A: 24h de evolución aguda | L: Periné, esfínteres y ambas piernas | I: Variable pero con anestesia progresiva | C: Parestesias y pérdida de sensibilidad | A: Urgencia médica.",
+        "abcde": "A: Saco dural y raíces de la cauda equina | B: Compresión mecánica masiva | C: Agudo sobre crónico | D: Parálisis vesical y anal | E: Emergencia hospitalaria.",
+        "what_to_do": "Llamada directa al neurocirujano/traumatólogo de guardia + RMN lumbar urgente + descompresión quirúrgica precoz (<24-48 h).",
+        "what_not_to_do": "¡JAMÁS demorar el caso, no realizar técnicas intervencionistas en consulta ni enviar al paciente a casa con analgésicos!"
+      }
+    },
+    {
+      "id": "manual-case-4",
+      "source": "manual_pdf",
+      "category": "cervical",
+      "title": "Caso M16: Radiculopatía Cervical C6 frente a Tendinopatía de Hombro",
+      "patient": "Varón de 48 años, informático. Consulta por dolor en hombro y brazo derecho de 6 semanas de evolución que irradia por la cara anterolateral del antebrazo hasta el pulgar e índice. Se acompaña de sensación de corrientazo eléctrico. El dolor empeora al girar la cabeza hacia la derecha o al mirar la pantalla hacia arriba.",
+      "findings": [
+        {
+          "test": "Test de Spurling",
+          "result": "Positivo franco con reproducción instantánea del dolor hacia el pulgar derecho"
+        },
+        {
+          "test": "Test de Distracción Cervical",
+          "result": "Positivo (alivio inmediato del dolor en el brazo durante la tracción axial)"
+        },
+        {
+          "test": "Signo de Bakody (Mano sobre la cabeza)",
+          "result": "Positivo (el paciente adopta espontáneamente esta postura para calmarse)"
+        },
+        {
+          "test": "Maniobras de Hombro (Hawkins, Neer, Jobe)",
+          "result": "Negativas con hombro libre e indoloro"
+        }
+      ],
+      "question": "¿Cuál es el diagnóstico diferencial de certeza y el nivel radicular afectado?",
+      "options": [
+        "Tendinopatía calcificante de supraespinoso",
+        "Radiculopatía cervical C6 derecha por compresión foraminal (hernia discal C5-C6 o uncoartrosis)",
+        "Síndrome del desfiladero torácico vascular",
+        "Síndrome del túnel carpiano aislado"
+      ],
+      "correct_index": 1,
+      "explanation": "El dolor irradiado por cara anterolateral hasta 1.º y 2.º dedo (dermatoma C6), con Spurling positivo, alivio con Distracción y signo de Bakody positivo sin patología intrínseca de hombro confirma radiculopatía C6.",
+      "expert_thinking": {
+        "alicia": "A: 6 semanas | L: Cervical baja + hombro + cara radial antebrazo y pulgar/índice | I: 7/10 | C: Corrientazo eléctrico | A: Peor extensión y rotación cervical derecha; alivia mano en la cabeza (Bakody).",
+        "abcde": "A: Raíz C6 derecha (C5-C6) | B: Dolor neuropático radicular | C: Subagudo | D: Incapacidad laboral frente al ordenador | E: Estrés postural.",
+        "what_to_do": "Neuromoduladores (Pregabalina) + curso corto de corticoide oral en fase aguda + tracción/fisioterapia cervical + considerar bloqueo epidural interlaminar cervical o transforaminal si refractario.",
+        "what_not_to_do": "No operar el hombro ni infiltrar la bursa subacromial por error de localización."
+      }
+    },
+    {
+      "id": "manual-case-5",
+      "source": "manual_pdf",
+      "category": "cadera",
+      "title": "Caso M6: Coxartrosis frente a Síndrome de Dolor Trocantérico Mayor (GTPS)",
+      "patient": "Mujer de 66 años. Consulta por dolor en región lateral de la cadera derecha que le impide dormir de ese lado desde hace 1 año. Refiere dolor punzante al subir escaleras y al palparse sobre el hueso lateral de la cadera. La movilidad de la cadera está conservada sin dolor inguinal.",
+      "findings": [
+        {
+          "test": "Palpación del Trocánter Mayor",
+          "result": "Dolor exquisito y localizado sobre la carilla posterior y lateral del trocánter mayor"
+        },
+        {
+          "test": "Test de Trendelenburg",
+          "result": "Positivo moderado con debilidad de glúteo medio"
+        },
+        {
+          "test": "Rotación Interna y Externa Pasiva de Cadera",
+          "result": "Rango completo e indoloro (sin choque anterior)"
+        },
+        {
+          "test": "Test FADIR y FABER",
+          "result": "FADIR negativo; FABER produce dolor lateral en trocánter, no en ingle"
+        }
+      ],
+      "question": "¿Cuál es el diagnóstico diferencial correcto y la diana terapéutica inicial?",
+      "options": [
+        "Coxartrosis avanzada que requiere prótesis total de cadera inmediata",
+        "Síndrome de dolor trocantérico mayor (GTPS / tendinopatía de glúteo medio-menor y bursitis trocantérea): fisioterapia de carga isométrica y valoración de infiltración guiada por ecografía",
+        "Sacroileítis inflamatoria seronegativa",
+        "Meralgia parestésica por compresión del nervio femorocutáneo"
+      ],
+      "correct_index": 1,
+      "explanation": "El dolor lateral puro a la palpación del trocánter mayor con movilidad articular coxofemoral conservada e incapacidad para dormir en decúbito lateral orienta a GTPS (tendinopatía del manguito abductor de cadera), no a artrosis intraarticular (que dolería en la ingle).",
+      "expert_thinking": {
+        "alicia": "A: 1 año | L: Cara lateral de cadera derecha sobre trocánter | I: 6/10 | C: Quemazón y dolor punzante | A: Peor decúbito lateral derecho, escaleras y apoyo unipodal.",
+        "abcde": "A: Tendón del glúteo medio/menor y bursa trocantérea | B: Nociceptivo tendinoso / entesopatía | C: Crónico | D: Insomnio por dolor de apoyo | E: Mujer postmenopáusica.",
+        "what_to_do": "Fisioterapia con carga isométrica progresiva de abductores + ecografía para valorar tendinosis vs rotura + infiltración ecoguiada peritendinosa/bursal si dolor nocturno refractario.",
+        "what_not_to_do": "No solicitar prótesis de cadera sin comprobar que la articulación coxofemoral está sana; no infiltrar corticoides directamente intratendón."
+      }
     }
   ],
   "notion_guide": [

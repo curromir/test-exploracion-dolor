@@ -374,13 +374,27 @@
       <section id="tab-quiz" class="tab-pane">
         <div class="quiz-hero glass-panel">
           <div class="quiz-hero-content">
-            <h2>📝 Simulador Clínico & Casos Reales</h2>
-            <p>Pon a prueba tu razonamiento diagnóstico resolviendo casos clínicos estructurados con retroalimentación inmediata.</p>
+            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.25rem;">
+              <span style="font-size: 1.5rem;">📝</span>
+              <h2>Simulador Clínico & Casos de Pensamiento Experto</h2>
+            </div>
+            <p>Entrena tu razonamiento diagnóstico resolviendo casos reales del <strong>Manual de Dolor Crónico (Pensamiento Experto)</strong> y las simulaciones de <strong>Notion ALICIA-ABCDE</strong> con retroalimentación formativa y desglose paso a paso.</p>
           </div>
           <div class="quiz-score-box">
             <div class="score-number" id="quizScoreDisplay">0/0</div>
             <div class="score-label">Aciertos Clínicos</div>
           </div>
+        </div>
+
+        <!-- Case Filter Chips -->
+        <div class="case-filters-bar">
+          <button class="case-filter-chip active" data-case-filter="all">🌐 Todos los Casos</button>
+          <button class="case-filter-chip" data-case-filter="notion">🧠 Simulación Notion (ALICIA-ABCDE)</button>
+          <button class="case-filter-chip" data-case-filter="manual_pdf">📚 Manual de Pensamiento Experto</button>
+          <button class="case-filter-chip" data-case-filter="lumbar">⚡ Columna Lumbar & Radicular</button>
+          <button class="case-filter-chip" data-case-filter="hombro">🦴 Hombro & Miembro Superior</button>
+          <button class="case-filter-chip" data-case-filter="sacroiliaca">🎯 Pelvis & Sacroilíaco</button>
+          <button class="case-filter-chip" data-case-filter="cadera">🦿 Cadera & Rodilla</button>
         </div>
 
         <div class="cases-container" id="casesContainer">

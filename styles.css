@@ -1817,3 +1817,118 @@ body.dark-theme .mobile-bottom-bar {
   white-space: pre-line;
   line-height: 1.6;
 }
+
+/* ==========================================================================
+   ENHANCED CASES & EXPERT THINKING STYLES
+   ========================================================================== */
+.case-filters-bar {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.85rem;
+  margin-bottom: 1.25rem;
+  scrollbar-width: none;
+}
+
+.case-filters-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.case-filter-chip {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  padding: 0.45rem 0.9rem;
+  border-radius: var(--radius-full);
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: var(--transition);
+}
+
+.case-filter-chip:hover {
+  border-color: var(--accent-blue);
+  color: var(--text-primary);
+}
+
+.case-filter-chip.active {
+  background: rgba(37, 99, 235, 0.12);
+  border-color: var(--accent-blue);
+  color: var(--accent-blue);
+}
+
+.case-source-badge {
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-full);
+  text-transform: uppercase;
+}
+
+.case-source-badge.notion {
+  background: rgba(124, 58, 237, 0.12);
+  color: #7c3aed;
+  border: 1px solid rgba(124, 58, 237, 0.3);
+}
+
+.case-source-badge.manual_pdf {
+  background: rgba(5, 150, 105, 0.12);
+  color: #059669;
+  border: 1px solid rgba(5, 150, 105, 0.3);
+}
+
+.expert-breakdown-box {
+  margin-top: 1rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.expert-box-title {
+  font-size: 0.85rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent-blue);
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.expert-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 0.75rem;
+}
+
+.expert-subcard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 0.85rem 1rem;
+}
+
+.expert-subcard h5 {
+  font-size: 0.78rem;
+  font-weight: 800;
+  margin-bottom: 0.35rem;
+}
+
+.expert-subcard p {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.expert-what-todo {
+  border-left: 4px solid var(--accent-emerald);
+}
+
+.expert-what-not {
+  border-left: 4px solid var(--accent-rose);
+}

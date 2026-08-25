@@ -622,14 +622,31 @@ function renderNotionGuide() {
   `).join('');
 }
 
-// Render Clinical Cases / Quiz
+// Render Clinical Cases / Quiz (Notion ALICIA-ABCDE & Expert Manual)
+let currentCaseFilter = 'all';
+
 function renderCases() {
   if (!DOM.casesContainer || !state.catalog || !state.catalog.clinical_cases) return;
-  DOM.casesContainer.innerHTML = state.catalog.clinical_cases.map((c, cIdx) => `
+
+  let casesList = [...state.catalog.clinical_cases];
+  if (currentCaseFilter !== 'all') {
+    if (currentCaseFilter === 'notion' || currentCaseFilter === 'manual_pdf') {
+      casesList = casesList.filter(c => c.source === currentCaseFilter);
+    } else {
+      casesList = casesList.filter(c => c.category === currentCaseFilter);
+    }
+  }
+
+  DOM.casesContainer.innerHTML = casesList.map((c, cIdx) => `
     <div class="case-card glass-panel" id="case-${c.id}">
       <div class="case-header">
-        <h3 class="case-title">${c.title}</h3>
-        <span class="category-tag">${c.region.toUpperCase()}</span>
+        <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+          <span class="case-source-badge ${c.source}">
+            ${c.source === 'notion' ? '🧠 Notion ALICIA-ABCDE' : '📚 Manual Pensamiento Experto'}
+          </span>
+          <span class="category-tag">${c.category.toUpperCase()}</span>
+        </div>
+        <h3 class="case-title" style="margin-top: 0.35rem;">${c.title}</h3>
       </div>
 
       <div class="case-patient-box">
@@ -645,7 +662,7 @@ function renderCases() {
         `).join('')}
       </div>
 
-      <div class="case-question-title">${c.question}</div>
+      <div class="case-question-title">❓ ${c.question}</div>
 
       <div class="case-options" data-case-id="${c.id}" data-correct="${c.correct_index}">
         ${c.options.map((opt, oIdx) => `
@@ -656,40 +673,55 @@ function renderCases() {
       </div>
 
       <div class="case-feedback" id="feedback-${c.id}">
-        <strong>💡 Razonamiento Clínico:</strong>
+        <strong>💡 Razonamiento Diagnóstico:</strong>
         <p style="margin-top: 0.25rem;">${c.explanation}</p>
+
+        ${c.expert_thinking ? `
+          <div class="expert-breakdown-box">
+            <div class="expert-box-title">
+              <span>🧠</span> <span>Estructura Mental del Experto en Consulta</span>
+            </div>
+
+            <div class="expert-grid-2">
+              <div class="expert-subcard">
+                <h5 style="color: var(--accent-blue);">📋 Fenotipo ALICIA</h5>
+                <p>${c.expert_thinking.alicia}</p>
+              </div>
+              <div class="expert-subcard">
+                <h5 style="color: #7c3aed;">🎯 Modelo ABCDE</h5>
+                <p>${c.expert_thinking.abcde}</p>
+              </div>
+            </div>
+
+            <div class="expert-grid-2">
+              <div class="expert-subcard expert-what-todo">
+                <h5 style="color: var(--accent-emerald);">✅ Plan de Acción: Qué Hacer</h5>
+                <p>${c.expert_thinking.what_to_do}</p>
+              </div>
+              <div class="expert-subcard expert-what-not">
+                <h5 style="color: var(--accent-rose);">⚠️ Errores y Trampas: Qué NO Hacer</h5>
+                <p>${c.expert_thinking.what_not_to_do}</p>
+              </div>
+            </div>
+          </div>
+        ` : ''}
       </div>
     </div>
   `).join('');
+
+  attachCaseFilterEvents();
 }
 
-window.answerCaseQuestion = function(caseId, selectedIdx) {
-  const caseBox = document.getElementById(`case-${caseId}`);
-  if (!caseBox) return;
-  const optionsDiv = caseBox.querySelector('.case-options');
-  const correctIdx = parseInt(optionsDiv.getAttribute('data-correct'), 10);
-  const buttons = optionsDiv.querySelectorAll('.case-option-btn');
-  const feedback = document.getElementById(`feedback-${caseId}`);
-
-  buttons.forEach((btn, idx) => {
-    btn.disabled = true;
-    if (idx === correctIdx) {
-      btn.classList.add('correct');
-    } else if (idx === selectedIdx) {
-      btn.classList.add('incorrect');
-    }
+function attachCaseFilterEvents() {
+  document.querySelectorAll('.case-filter-chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      document.querySelectorAll('.case-filter-chip').forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+      currentCaseFilter = chip.getAttribute('data-case-filter');
+      renderCases();
+    });
   });
-
-  if (selectedIdx === correctIdx) {
-    state.quizScore.correct++;
-  }
-  state.quizScore.total++;
-  if (DOM.quizScoreDisplay) {
-    DOM.quizScoreDisplay.textContent = `${state.quizScore.correct}/${state.quizScore.total}`;
-  }
-
-  if (feedback) feedback.style.display = 'block';
-};
+}
 
 // Render Favorites Tab
 function renderFavorites() {
